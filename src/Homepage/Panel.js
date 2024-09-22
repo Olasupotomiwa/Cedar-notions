@@ -30,7 +30,7 @@ const HorizontalCard = () => {
           <Heading size="md" textAlign={{ base: "center", md: "left" }}>
            Our Mission
           </Heading>
-          <Text py="2" textAlign={{ base: "center", md: "justify" }} >
+          <Text py="2" textAlign={{ base: "justify", md: "justify" }} >
           At Cedar Notions & Associates, our mission is to provide exceptional legal services by
 harnessing the power of qualitative research to develop informed strategies and customized
 solutions. We take pride in our commitment to delivering personalized attention to every

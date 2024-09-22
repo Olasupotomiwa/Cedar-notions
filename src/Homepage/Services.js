@@ -164,7 +164,7 @@ const Earners = () => {
     return (
       <Center>
         <Box py={4} style={carouselContainerStyle} px={0} width={"900%"}>
-          <Box textAlign={"center"} p={6} mt={4}>
+          <Box textAlign={"center"} p={0} mt={8}>
             <Heading>Our Expertise/ Practice Area Overviews</Heading>
 
             <Text
@@ -216,7 +216,7 @@ const Earners = () => {
         wrap="wrap"
         fontFamily="Clash Grotesk"
       >
-        <Box textAlign={"center"} p={6} mt={4}>
+        <Box textAlign={"center"} p={0} mt={8}>
           <Heading>Our Expertise/ Practice Area Overviews</Heading>
 
           <Text
