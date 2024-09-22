@@ -66,7 +66,7 @@ const TestimonialPage = () => {
           Testimonials
           </Heading>
         </Box>
-        <Box position="relative" data-aos="fade-up" data-aos-duration="1500">
+        <Box position="relative" data-aos="fade-up" data-aos-duration="1000">
           <Carousel
             selectedItem={selectedSlide}
             onChange={(index) => setSelectedSlide(index)}
