@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading, Text, Button, Flex, VStack } from "@chakra-ui/react";
-import heroBg from "../assets/bg.png";
+import heroBg from "../assets/library.jpg";
 
 const HeroPage = () => {
   return (
@@ -18,27 +18,29 @@ const HeroPage = () => {
         px={{ base: 4, md: 8 }}
         bgGradient="linear(to-b, blackAlpha.800 100%, transparent)"
       >
-        <Box px={{ base: "4", md: "10" }} mb={20}>
+        <Box px={{ base: "4", md: "10" }} mb={10}>
           <Heading
             as="h1"
-            size="2xl"
+            size={{base: '2xl', md: '3xl'}}
             mb={10}
             textAlign="center"
             fontFamily="Montserrat"
+            px={8}
           >
             Cedar Notions & Associates (Law Ratio)
           </Heading>
           <Text
-            fontSize="xl"
-            mb={24}
+            fontSize={{base: '18px', md: 'xl'}}
+            mb={10}
             textAlign="center"
             fontFamily="Montserrat"
+            px={{base: '4', md: '28'}}
           >
             A pioneering law firm revolutionizing the legal landscape with
             innovative solutions, unwavering integrity, and a relentless
-            commitment to client success.
+            commitment to client success with over 15 years experience.
           </Text>
-          <Box mx={"auto"} textAlign={"center"}>
+          <Box mx={"auto"} textAlign={"center"} mb={4}>
             <Button colorScheme="teal" size="lg" textAlign="center">
               Make enquiry
             </Button>

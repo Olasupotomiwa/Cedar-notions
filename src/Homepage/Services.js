@@ -77,7 +77,7 @@ const Card = ({ header, content, text, icon }) => {
     );
   };
   
-const Earners = () => {
+const Services = () => {
   const data = [
     {
       header: "Corporate Law & Practices",
@@ -248,4 +248,4 @@ const Earners = () => {
   }
 };
 
-export default Earners;
+export default Services;

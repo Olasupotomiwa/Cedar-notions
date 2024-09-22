@@ -54,7 +54,7 @@ client, ensuring that their unique needs are addressed with precision and care.
       <Flex flex="1" justifyContent="center" alignItems="center" py={0}>
         <Image
           objectFit="cover"
-          
+         
           src={Law}
           alt="law"
         />
