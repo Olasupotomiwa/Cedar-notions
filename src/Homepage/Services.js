@@ -163,9 +163,9 @@ const Earners = () => {
   if (isMobile) {
     return (
       <Center>
-        <Box py={4} style={carouselContainerStyle} px={0} width={"900%"}>
+        <Box py={4} style={carouselContainerStyle} px={0} width={"90%"} pb={10}>
           <Box textAlign={"center"} p={0} mt={8}>
-            <Heading>Our Expertise/ Practice Area Overviews</Heading>
+            <Heading  fontFamily="Montserrat" fontSize={{ base: "20px", md: "32px" }}>Our Expertise/ Practice Area Overviews</Heading>
 
             <Text
               fontSize="16px"
@@ -214,10 +214,11 @@ const Earners = () => {
         align={{ base: "center", md: "flex-start" }}
         justify='center'
         wrap="wrap"
-        fontFamily="Clash Grotesk"
+        fontFamily="Montserrat"
+        pb={10}
       >
         <Box textAlign={"center"} p={0} mt={8}>
-          <Heading>Our Expertise/ Practice Area Overviews</Heading>
+          <Heading fontSize={{ base: "20px", md: "32px" }} fontFamily="Montserrat">Our Expertise/ Practice Area Overviews</Heading>
 
           <Text
             fontSize="16px"

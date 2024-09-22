@@ -9,6 +9,7 @@ import {
   Flex,
   Box
 } from "@chakra-ui/react";
+import { FaBullseye } from "react-icons/fa";
 import Law from '../assets/law.jpg'
 
 const HorizontalCard = () => {
@@ -27,9 +28,12 @@ const HorizontalCard = () => {
         <CardBody textAlign="center">
           {" "}
           {/* Center text for better appearance */}
-          <Heading size="md" textAlign={{ base: "center", md: "left" }}>
-           Our Mission
-          </Heading>
+          <Flex alignItems="center">
+  <Box as={FaBullseye} w={6} h={6} color="black" mr={2} /> {/* Icon with some styling */}
+  <Heading size="md" textAlign={{ base: "center", md: "left" }}>
+    Our Mission
+  </Heading>
+</Flex>
           <Text py="2" textAlign={{ base: "justify", md: "justify" }} >
           At Cedar Notions & Associates, our mission is to provide exceptional legal services by
 harnessing the power of qualitative research to develop informed strategies and customized
