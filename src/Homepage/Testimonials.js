@@ -57,7 +57,7 @@ const TestimonialPage = () => {
       padding={{ base: "2", md: "6" }}
       my={0}
       data-aos="fade-up"
-      data-aos-duration="1500"
+      data-aos-duration="1000"
     >
       <Box maxWidth="540px" width="100%" p={0} {...handlers}>
         <Box p={2} mt={10} textAlign={"center"}>

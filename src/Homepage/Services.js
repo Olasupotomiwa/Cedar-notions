@@ -25,6 +25,8 @@ const Card = ({ header, content, text, icon }) => {
         borderRadius="md"
         width={{ base: "100%", md: "300px" }}
         mb={4}
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <Flex direction="column" align="center"> {/* Make Flex column and center items */}
           <Box mt={2} width="100%" textAlign="center">
@@ -164,7 +166,8 @@ const Services = () => {
     return (
       <Center>
         <Box py={4} style={carouselContainerStyle} px={0} width={"90%"} pb={10}>
-          <Box textAlign={"center"} p={0} mt={8}>
+          <Box textAlign={"center"} p={0} mt={8}data-aos="fade-up"
+      data-aos-duration="500">
             <Heading  fontFamily="Montserrat" fontSize={{ base: "20px", md: "32px" }}>Our Expertise/ Practice Area Overviews</Heading>
 
             <Text
@@ -216,6 +219,8 @@ const Services = () => {
         wrap="wrap"
         fontFamily="Montserrat"
         pb={10}
+        data-aos="fade-up"
+      data-aos-duration="500"
       >
         <Box textAlign={"center"} p={0} mt={8}>
           <Heading fontSize={{ base: "20px", md: "32px" }} fontFamily="Montserrat">Our Expertise/ Practice Area Overviews</Heading>

@@ -13,7 +13,8 @@ import path from "../assets/hammer.jpg";
 
 const GradientComponent = () => {
   return (
-    <Box bg={"#f2f2f2"} >
+    <Box bg={"#f2f2f2"} data-aos="fade-up"
+    data-aos-duration="500" >
       <Box
         h="auto"
         display="flex"

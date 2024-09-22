@@ -20,6 +20,8 @@ const Card = ({ imageSrc, name, specialization }) => {
       borderRadius="md"
       width={{ base: "100%", md: "300px" }}
       mb={4}
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <Flex direction="column" align="center">
         <Image
@@ -104,7 +106,8 @@ const AttorneyProfiles = () => {
     return (
       <Center>
         <Box py={4} width={"90%"} pb={10}>
-          <Box textAlign={"center"} p={0} mt={2}>
+          <Box textAlign={"center"} p={0} mt={2} data-aos="fade-up"
+      data-aos-duration="500">
             <Heading
               fontFamily="Montserrat"
               fontSize={{ base: "20px", md: "32px" }}
@@ -169,7 +172,8 @@ const AttorneyProfiles = () => {
   } else {
     return (
       <Box>
-        <Box textAlign={"center"} p={0} mt={6}>
+        <Box textAlign={"center"} p={0} mt={6} data-aos="fade-up"
+      data-aos-duration="500">
           <Heading
             fontSize={{ base: "20px", md: "32px" }}
             fontFamily="Montserrat"
@@ -213,7 +217,8 @@ const AttorneyProfiles = () => {
 
          
         </Flex>
-        <Box mt={0} textAlign={"right"} px={10}>
+        <Box mt={0} textAlign={"right"} px={10} data-aos="fade-up"
+      data-aos-duration="1500">
             <Button
               colorScheme="teal"
               variant="solid"

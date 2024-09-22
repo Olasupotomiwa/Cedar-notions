@@ -22,6 +22,8 @@ const HorizontalCard = () => {
       maxW={{ base: "90vw", md: "70vw" }}
       mx="auto"
       mt={4}
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <Flex flex="1" justifyContent="center" alignItems="center" py={0}>
         <Image objectFit="cover" src={Law} alt="law" />
@@ -37,9 +39,10 @@ const HorizontalCard = () => {
   </Heading>
 </Flex>
 
-          <Text py="2" textAlign={{ base: "justify", md: "justify" }}   fontFamily="Montserrat">
+          <Text py="2" textAlign={{ base: "justify", md: "justify" }}   fontFamily="Montserrat" data-aos="fade-up"
+      data-aos-duration="800">
             At Cedar Notions & Associates, we understand that every legal
-            challenge is unique, which is why we off er personalized legal
+            challenge is unique, which is why we offer personalized legal
             expertise specifically tailored to meet your individual needs. Our
             commitment to your success is unwavering; we take the time to
             listen, understand your objectives, and craft strategies that align

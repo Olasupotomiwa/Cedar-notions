@@ -23,8 +23,10 @@ const HorizontalCard = () => {
       mx="auto"
       mt={-16}
       
+      
     >
-      <Flex flex="1" p={4} direction={'row'}>
+      <Flex flex="1" p={4} direction={'row'} data-aos="fade-up"
+      data-aos-duration="500">
         <CardBody textAlign="center">
           {" "}
           {/* Center text for better appearance */}
@@ -51,7 +53,8 @@ client, ensuring that their unique needs are addressed with precision and care.
       </Flex>
      
 
-      <Flex flex="1" justifyContent="center" alignItems="center" py={0}>
+      <Flex flex="1" justifyContent="center" alignItems="center" py={0} data-aos="fade-up"
+      data-aos-duration="1000">
         <Image
           objectFit="cover"
          
