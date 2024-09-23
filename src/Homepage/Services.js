@@ -60,6 +60,7 @@ const Card = ({ header, content, text, icon }) => {
                 color="#000000"
                 fontFamily="Montserrat"
                 my={2}
+                textAlign={'left'}
               >
                 {text}
               </Text>

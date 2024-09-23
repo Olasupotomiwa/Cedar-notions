@@ -50,7 +50,7 @@ export default function Navbar() {
         <Flex flex={{ base: 1, md: 'auto' }} justify="flex-end" align="center">
           <IconButton
             onClick={onToggle}
-            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} color={"white"} />}
+            icon={isOpen ? <CloseIcon w={3} h={3} color={'white'} /> : <HamburgerIcon w={5} h={5} color={"white"} />}
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
             display={{ base: 'flex', md: 'none' }}
@@ -85,7 +85,7 @@ export default function Navbar() {
 const DesktopNav = () => {
   const linkColor = '#ffffff';
   const linkHoverColor = '#9b9b9a';
-  const activeLinkColor = '#ffffff';
+  const activeLinkColor = '#D6C84A';
 
   return (
     <Stack direction={'row'} spacing={4} justify={'center'}>
@@ -102,13 +102,13 @@ const DesktopNav = () => {
               display: 'flex',
               alignItems: 'center',
               transition: 'color 0.2s',
+              // Hover effect inside style
+              ':hover': {
+                color: linkHoverColor,
+              },
             })}
-            _hover={{
-              textDecoration: 'none',
-              color: linkHoverColor,
-            }}
           >
-            
+            {/* {navItem.icon} */}
             <Box ml={2}>{navItem.label}</Box>
           </NavLink>
         </Box>
@@ -117,8 +117,9 @@ const DesktopNav = () => {
   );
 };
 
+
 const MobileNav = ({ onClose }) => {
-  const linkColor = '#ffffff';
+  const linkColor = '#000000';
   const linkHoverColor = '#9b9b9a';
   const activeLinkColor = '#D6C84A';
 
@@ -134,14 +135,15 @@ const MobileNav = ({ onClose }) => {
               textDecoration: 'none',
               display: 'flex',
               alignItems: 'center',
+              padding: '8px 16px',
+              fontSize: '16px',
               transition: 'color 0.2s',
+              ':hover': {
+                color: linkHoverColor,
+              },
             })}
-            _hover={{
-              textDecoration: 'none',
-              color: linkHoverColor,
-            }}
           >
-            {navItem.icon}
+            {/* {navItem.icon} */}
             <Text ml={2}>{navItem.label}</Text>
           </NavLink>
         </Box>
@@ -152,7 +154,6 @@ const MobileNav = ({ onClose }) => {
         variant='ghost'
         fontWeight={500}
         color={'black'}
-       
         _hover={{
           opacity: '0.9',
         }}
@@ -162,13 +163,13 @@ const MobileNav = ({ onClose }) => {
         onClick={onClose}
         href="https://wa.me/393500460774"
         target="_blank"
-        
       >
         Book Now
       </Button>
     </Stack>
   );
 };
+
 
 const NAV_ITEMS = [
   {

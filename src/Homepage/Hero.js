@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Heading, Text, Button, Flex, VStack } from "@chakra-ui/react";
+import { FaInfoCircle } from "react-icons/fa";
 import heroBg from "../assets/library.jpg";
 
 const HeroPage = () => {
@@ -34,17 +35,17 @@ const HeroPage = () => {
             mb={10}
             textAlign="center"
             fontFamily="Montserrat"
-            px={{base: '4', md: '28'}}
+            px={{base: '0', md: '28'}}
           >
             A pioneering law firm revolutionizing the legal landscape with
             innovative solutions, unwavering integrity, and a relentless
             commitment to client success with over 15 years experience.
           </Text>
           <Box mx={"auto"} textAlign={"center"} mb={4}>
-            <Button colorScheme="teal" size="lg" textAlign="center">
-              Make enquiry
-            </Button>
-          </Box>
+  <Button leftIcon={<FaInfoCircle />} bg={'#D6C84A'}  color='white'size="lg" textAlign="center">
+    About Us
+  </Button>
+</Box>
         </Box>
       </VStack>
     </Flex>

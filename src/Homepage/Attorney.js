@@ -27,8 +27,8 @@ const Card = ({ imageSrc, name, specialization }) => {
         <Image
           src={imageSrc}
           alt={name}
-          borderRadius="full"
-          boxSize="200px"
+          borderRadius="20px"
+          boxSize="250px"
           objectFit="cover"
           mb={4}
         />

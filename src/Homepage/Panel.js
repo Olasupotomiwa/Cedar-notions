@@ -57,7 +57,7 @@ client, ensuring that their unique needs are addressed with precision and care.
       data-aos-duration="1000">
         <Image
           objectFit="cover"
-         
+          h={'full'}
           src={Law}
           alt="law"
         />

@@ -7,6 +7,8 @@ import AttorneyProfiles from './Attorney';
 import WhyUs from './WhyUs'
 import TestimonialPage from './Testimonials';
 import BookConsult from './BookConsult'
+import Faqs from './Faqs'
+import Footer from './Footer';
 
 const Homepage = () => {
   return (
@@ -21,6 +23,8 @@ const Homepage = () => {
         < WhyUs/>
         <TestimonialPage/>
         <BookConsult/>
+        <Faqs/>
+        <Footer/>
         </Box>
       
     </Box>

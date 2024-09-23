@@ -55,7 +55,7 @@ const GradientComponent = () => {
   fontFamily="Montserrat"
 >
   Schedule a consultation with{" "}
-  <Text as="span" color="#FFAA00"> {/* This is where you set the custom color */}
+  <Text as="span" color="#D6C84A"> {/* This is where you set the custom color */}
     Cedar Notions & Associates
   </Text>{" "}
   to explore how our tailored legal services can meet your unique needs.
@@ -66,14 +66,14 @@ const GradientComponent = () => {
 
             <Button
               color={"white"}
-              bg={"#FFAA00"}
+              bg={"#D6C84A"}
               variant="solid"
               fontWeight={"400"}
               size="md"
               px={10}
               py={6}
               my={10}
-              href="https://wa.me/393500460774"
+              href="/"
               target="_blank"
               as={"a"}
               _hover={{ opacity: "0.9" }}

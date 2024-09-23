@@ -26,21 +26,30 @@ const HorizontalCard = () => {
       data-aos-duration="1000"
     >
       <Flex flex="1" justifyContent="center" alignItems="center" py={0}>
-        <Image objectFit="cover" src={Law} alt="law" />
+        <Image objectFit="cover" src={Law} h={'full'} alt="law" />
       </Flex>
       <Flex flex="1" p={4} direction={"row"}>
         <CardBody textAlign="center">
           {" "}
           {/* Center text for better appearance */}
           <Flex alignItems="center">
-  <Box as={FaStar} w={6} h={6} color="black" mr={2} /> {/* Icon representing reliability */}
-  <Heading size="md" textAlign={{ base: "center", md: "left" }}   fontFamily="Montserrat">
-    Why Choose Us ?
-  </Heading>
-</Flex>
-
-          <Text py="2" textAlign={{ base: "justify", md: "justify" }}   fontFamily="Montserrat" data-aos="fade-up"
-      data-aos-duration="800">
+            <Box as={FaStar} w={6} h={6} color="black" mr={2} />{" "}
+            {/* Icon representing reliability */}
+            <Heading
+              size="md"
+              textAlign={{ base: "center", md: "left" }}
+              fontFamily="Montserrat"
+            >
+              Why Choose Us ?
+            </Heading>
+          </Flex>
+          <Text
+            py="2"
+            textAlign={{ base: "justify", md: "justify" }}
+            fontFamily="Montserrat"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             At Cedar Notions & Associates, we understand that every legal
             challenge is unique, which is why we offer personalized legal
             expertise specifically tailored to meet your individual needs. Our
