@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Divider, Text, Heading } from "@chakra-ui/react";
-import { EmailIcon } from "@chakra-ui/icons";
+
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
@@ -9,13 +9,7 @@ import {
   FaLinkedinIn,
   FaEnvelope,
 } from "react-icons/fa";
-import {
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Button,
-  FormControl,
-} from "@chakra-ui/react";
+
 import Logo from "../assets/Logo.png";
 import bg from "../assets/bg.png";
 
