@@ -178,6 +178,7 @@ const Services = () => {
               my={2}
               mx={"auto"}
               w={{ base: "100%", md: "60%" }}
+              textAlign={'justify'}
             >
               Our team of seasoned legal professionals boasts extensive
               experience, in-depth knowledge, and a passion for delivering
