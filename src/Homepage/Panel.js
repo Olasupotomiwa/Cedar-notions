@@ -10,7 +10,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { FaFlag } from "react-icons/fa";
-import { useEffect } from "react";
+
 import { useNavigate } from "react-router-dom";
 import Law from "../assets/law.jpg";
 
