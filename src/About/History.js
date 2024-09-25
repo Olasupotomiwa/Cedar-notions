@@ -21,8 +21,7 @@ const History = () => {
               <Text
                 fontSize={16}
                 pt={10}
-                data-aos="fade-up"
-                data-aos-duration="500"
+               
               >
                 <Text as="span" fontWeight="bold" fontSize={'32px'} fontFamily={"Montserrat"}>
                   W
@@ -40,7 +39,7 @@ const History = () => {
             <br />
 
             <p>
-              <Text fontSize={16} data-aos="fade-up" data-aos-duration="500">
+              <Text fontSize={16} >
                 Founded in 2008, Cedar Notions & Associates has evolved from LAW
                 RATIO to become a comprehensive legal firm known for its diverse
                 range of services and unwavering commitment to client
@@ -51,7 +50,7 @@ const History = () => {
             </p>
             <br />
             <p>
-              <Text fontSize={16} data-aos="fade-up" data-aos-duration="500">
+              <Text fontSize={16}>
                 At Cedar Notions & Associates, we are committed to maintaining
                 the highest standards of professionalism and integrity in all
                 our dealings. As we continue to grow and evolve, our focus
@@ -65,6 +64,7 @@ const History = () => {
               my={8}
               data-aos="fade-up"
               data-aos-duration="500"
+              
             >
               <Icon as={FaFlag} boxSize={6} />
               <Heading
@@ -72,6 +72,7 @@ const History = () => {
                 size={{ base: "xl", md: "xl" }}
                 textAlign="left"
                 fontFamily="Signika Negative"
+                id="our-mission"
               >
                 Our Mission
               </Heading>

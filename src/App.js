@@ -7,6 +7,7 @@ import Homepage from "./Homepage";
 
 import Animation from "./Animation";
 import AboutPage from "./About";
+import ScrollToTop from './Top';
 
 const pageTitles = {
   "/": "Cedar Notions Associate",
@@ -28,6 +29,7 @@ const App = () => {
       <>
         {/* <ScrollToTop /> */}
         <Container maxW="1200px" px={0}>
+          <ScrollToTop/>
           <NavBar />
           <Animation>
             <Routes>

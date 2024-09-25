@@ -7,12 +7,33 @@ import {
   Text,
   Button,
   Flex,
-  Box
+  Box,
 } from "@chakra-ui/react";
-import {  FaFlag } from "react-icons/fa";
-import Law from '../assets/law.jpg'
+import { FaFlag } from "react-icons/fa";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Law from "../assets/law.jpg";
 
 const HorizontalCard = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/about");
+    setTimeout(() => {
+      const missionSection = document.getElementById("our-mission");
+      if (missionSection) {
+        const offset = -200; // Adjust this value for your fixed header height or desired offset
+        const elementPosition =
+          missionSection.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 500); // Delay for navigation to complete
+  };
+
   return (
     <Card
       display="flex"
@@ -22,45 +43,51 @@ const HorizontalCard = () => {
       maxW={{ base: "90vw", md: "70vw" }}
       mx="auto"
       mt={-16}
-      
-      
     >
-      <Flex flex="1" p={4} direction={'row'} data-aos="fade-up"
-      data-aos-duration="500">
+      <Flex
+        flex="1"
+        p={4}
+        direction={"row"}
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
         <CardBody textAlign="center">
           {" "}
           {/* Center text for better appearance */}
           <Flex alignItems="center">
-  <Box as={ FaFlag} w={6} h={6} color="black" mr={2} /> {/* Icon with some styling */}
-  <Heading size="md" textAlign={{ base: "center", md: "left" }} fontFamily={'Signika Negative'}>
-    Our Mission
-  </Heading>
-</Flex>
-          <Text py="2" textAlign={{ base: "justify", md: "justify" }} >
-          At Cedar Notions & Associates, our mission is to provide exceptional legal services by
-harnessing the power of qualitative research to develop informed strategies and customized
-solutions. We take pride in our commitment to delivering personalized attention to every
-client, ensuring that their unique needs are addressed with precision and care.
+            <Box as={FaFlag} w={6} h={6} color="black" mr={2} />{" "}
+            {/* Icon with some styling */}
+            <Heading
+              size="md"
+              textAlign={{ base: "center", md: "left" }}
+              fontFamily={"Signika Negative"}
+            >
+              Our Mission
+            </Heading>
+          </Flex>
+          <Text py="2" textAlign={{ base: "justify", md: "justify" }}>
+            At Cedar Notions & Associates, our mission is to provide exceptional
+            legal services by harnessing the power of qualitative research to
+            develop informed strategies and customized solutions. We take pride
+            in our commitment to delivering personalized attention to every
+            client, ensuring that their unique needs are addressed with
+            precision and care.
           </Text>
-         <Box mt='6' textAlign={'left'}>
-
-         <Button>
-                Read more
-            </Button>
-         </Box>
+          <Box mt="6" textAlign={"left"}>
+            <Button onClick={handleClick}>Read more</Button>
+          </Box>
         </CardBody>
-       
       </Flex>
-     
 
-      <Flex flex="1" justifyContent="center" alignItems="center" py={0} data-aos="fade-up"
-      data-aos-duration="1000">
-        <Image
-          objectFit="cover"
-          h={'full'}
-          src={Law}
-          alt="law"
-        />
+      <Flex
+        flex="1"
+        justifyContent="center"
+        alignItems="center"
+        py={0}
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <Image objectFit="cover" h={"full"} src={Law} alt="law" />
       </Flex>
     </Card>
   );

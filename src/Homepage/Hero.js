@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Heading, Text, Button, Flex, VStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaInfoCircle } from "react-icons/fa";
 import heroBg from "../assets/library.jpg";
 
@@ -48,6 +49,8 @@ const HeroPage = () => {
               color="white"
               size="lg"
               textAlign="center"
+              as={Link}
+              to='/about'
             >
               About Us
             </Button>
