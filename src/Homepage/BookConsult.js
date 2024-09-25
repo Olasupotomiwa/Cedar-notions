@@ -1,20 +1,11 @@
-import {
-  Box,
-  Flex,
-  Image,
-  Heading,
-  Text,
- 
-  Button,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, Heading, Text, Button } from "@chakra-ui/react";
 
 import SampleImage from "../assets/libraryy.jpg";
 import path from "../assets/hammer.jpg";
 
 const GradientComponent = () => {
   return (
-    <Box bg={"#f2f2f2"} data-aos="fade-up"
-    data-aos-duration="500" >
+    <Box bg={"#f2f2f2"} data-aos="fade-up" data-aos-duration="500">
       <Box
         h="auto"
         display="flex"
@@ -47,22 +38,22 @@ const GradientComponent = () => {
             />
           </Box>
           <Box flex="1" p={{ base: 4, md: 8 }}>
-          <Heading
-  as="h1"
-  size="2xl"
-  color="white"
-  mb={4}
-  fontFamily="Montserrat"
->
-  Schedule a consultation with{" "}
-  <Text as="span" color="#D6C84A"> {/* This is where you set the custom color */}
-    Cedar Notions & Associates
-  </Text>{" "}
-  to explore how our tailored legal services can meet your unique needs.
-</Heading>
-
-
-           
+            <Heading
+              as="h1"
+              size="2xl"
+              color="white"
+              mb={4}
+              fontFamily="Signika Negative"
+            >
+              Schedule a consultation with{" "}
+              <Text as="span" color="#D6C84A">
+                {" "}
+                {/* This is where you set the custom color */}
+                Cedar Notions & Associates
+              </Text>{" "}
+              to explore how our tailored legal services can meet your unique
+              needs.
+            </Heading>
 
             <Button
               color={"white"}
@@ -78,7 +69,7 @@ const GradientComponent = () => {
               as={"a"}
               _hover={{ opacity: "0.9" }}
             >
-             Get in touch
+              Get in touch
             </Button>
           </Box>
         </Flex>

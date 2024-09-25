@@ -169,7 +169,7 @@ const Services = () => {
         <Box py={4} style={carouselContainerStyle} px={0} width={"90%"} pb={10}>
           <Box textAlign={"center"} p={0} mt={8}data-aos="fade-up"
       data-aos-duration="500">
-            <Heading  fontFamily="Montserrat" fontSize={{ base: "20px", md: "32px" }}>Our Expertise/ Practice Area Overviews</Heading>
+            <Heading  fontFamily="Signika Negative" fontSize={{ base: "32px", md: "40px" }}>Our Expertise/ Practice Area Overviews</Heading>
 
             <Text
               fontSize="16px"
@@ -223,8 +223,8 @@ const Services = () => {
         data-aos="fade-up"
       data-aos-duration="500"
       >
-        <Box textAlign={"center"} p={0} mt={8}>
-          <Heading fontSize={{ base: "20px", md: "32px" }} fontFamily="Montserrat">Our Expertise/ Practice Area Overviews</Heading>
+        <Box textAlign={"center"} p={0} mt={10}>
+          <Heading fontSize={{ base: "32px", md: "40px" }} fontFamily="Signika Negative">Our Expertise/ Practice Area Overviews</Heading>
 
           <Text
             fontSize="16px"

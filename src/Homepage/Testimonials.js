@@ -62,7 +62,7 @@ const TestimonialPage = () => {
       <Box maxWidth="540px" width="100%" p={0} {...handlers}>
         <Box p={2} mt={10} textAlign={"center"}>
          
-          <Heading fontFamily={"Montserrat"} paddingY={2}>
+          <Heading fontFamily={"Signika Negative"} paddingY={2}>
           Testimonials
           </Heading>
         </Box>

@@ -22,30 +22,36 @@ const HeroPage = () => {
         <Box px={{ base: "4", md: "10" }} mb={10}>
           <Heading
             as="h1"
-            size={{base: '2xl', md: '3xl'}}
+            size={{ base: "2xl", md: "3xl" }}
             mb={10}
             textAlign="center"
-            fontFamily="Montserrat"
+            fontFamily="Signika Negative"
             px={8}
           >
             Cedar Notions & Associates (Law Ratio)
           </Heading>
           <Text
-            fontSize={{base: '18px', md: 'xl'}}
+            fontSize={{ base: "18px", md: "xl" }}
             mb={10}
             textAlign="center"
             fontFamily="Montserrat"
-            px={{base: '0', md: '28'}}
+            px={{ base: "0", md: "28" }}
           >
             A pioneering law firm revolutionizing the legal landscape with
             innovative solutions, unwavering integrity, and a relentless
             commitment to client success with over 15 years experience.
           </Text>
           <Box mx={"auto"} textAlign={"center"} mb={4}>
-  <Button leftIcon={<FaInfoCircle />} bg={'#D6C84A'}  color='white'size="lg" textAlign="center">
-    About Us
-  </Button>
-</Box>
+            <Button
+              leftIcon={<FaInfoCircle />}
+              bg={"#D6C84A"}
+              color="white"
+              size="lg"
+              textAlign="center"
+            >
+              About Us
+            </Button>
+          </Box>
         </Box>
       </VStack>
     </Flex>

@@ -9,7 +9,7 @@ import {
   Flex,
   Box
 } from "@chakra-ui/react";
-import { FaBullseye } from "react-icons/fa";
+import {  FaFlag } from "react-icons/fa";
 import Law from '../assets/law.jpg'
 
 const HorizontalCard = () => {
@@ -31,8 +31,8 @@ const HorizontalCard = () => {
           {" "}
           {/* Center text for better appearance */}
           <Flex alignItems="center">
-  <Box as={FaBullseye} w={6} h={6} color="black" mr={2} /> {/* Icon with some styling */}
-  <Heading size="md" textAlign={{ base: "center", md: "left" }}>
+  <Box as={ FaFlag} w={6} h={6} color="black" mr={2} /> {/* Icon with some styling */}
+  <Heading size="md" textAlign={{ base: "center", md: "left" }} fontFamily={'Signika Negative'}>
     Our Mission
   </Heading>
 </Flex>

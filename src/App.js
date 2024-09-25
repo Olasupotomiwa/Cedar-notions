@@ -6,12 +6,13 @@ import NavBar from "./Homepage/NavBar";
 import Homepage from "./Homepage";
 
 import Animation from "./Animation";
+import AboutPage from "./About";
 
 const pageTitles = {
   "/": "Cedar Notions Associate",
-  "/wallets": "Wallets",
-  "/import": "Import",
-  "/error": "Error!",
+  "/about": "About Us",
+  "/services": "Our Services",
+  "/contact": "contact",
 };
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <Animation>
             <Routes>
               <Route path="/" element={<Homepage />} />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </Animation>
         </Container>

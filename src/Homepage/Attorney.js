@@ -109,8 +109,8 @@ const AttorneyProfiles = () => {
           <Box textAlign={"center"} p={0} mt={2} data-aos="fade-up"
       data-aos-duration="500">
             <Heading
-              fontFamily="Montserrat"
-              fontSize={{ base: "20px", md: "32px" }}
+              fontFamily="Signika Negative"
+              fontSize={{ base: "32px", md: "40px" }}
             >
               Meet Our Attorneys
             </Heading>
@@ -175,8 +175,8 @@ const AttorneyProfiles = () => {
         <Box textAlign={"center"} p={0} mt={6} data-aos="fade-up"
       data-aos-duration="500">
           <Heading
-            fontSize={{ base: "20px", md: "32px" }}
-            fontFamily="Montserrat"
+            fontSize={{ base: "32px", md: "40px" }}
+            fontFamily="Signika Negative"
           >
             Meet Our Attorneys
           </Heading>

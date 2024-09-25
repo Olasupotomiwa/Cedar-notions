@@ -178,15 +178,16 @@ const NAV_ITEMS = [
     icon: <FaHome size={20}  />,
   },
   {
+    label: 'About',
+    href: '/about',
+    icon: <FaInfoCircle size={20}/>,
+  },
+  {
     label: 'Services',
     href: '/services',
     icon: <FaHome size={20}  />,
   },
-  {
-    label: 'About',
-    href: '/about-us',
-    icon: <FaInfoCircle size={20}/>,
-  },
+ 
   {
     label: 'Contact',
     href: '/contact',
