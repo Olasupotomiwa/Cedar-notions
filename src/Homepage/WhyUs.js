@@ -11,8 +11,28 @@ import {
 } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
 import Law from "../assets/jury.jpg";
+import { useNavigate } from "react-router-dom";
 
 const HorizontalCard = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/services");
+    setTimeout(() => {
+      const missionSection = document.getElementById("choose-us");
+      if (missionSection) {
+        const offset = -200;
+        const elementPosition =
+          missionSection.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 500); // Delay for navigation to complete
+  };
+
   return (
     <Card
       display="flex"
@@ -26,7 +46,7 @@ const HorizontalCard = () => {
       data-aos-duration="1000"
     >
       <Flex flex="1" justifyContent="center" alignItems="center" py={0}>
-        <Image objectFit="cover" src={Law} h={'full'} alt="law" />
+        <Image objectFit="cover" src={Law} h={"full"} alt="law" />
       </Flex>
       <Flex flex="1" p={4} direction={"row"}>
         <CardBody textAlign="center">
@@ -58,7 +78,7 @@ const HorizontalCard = () => {
             with your goals.
           </Text>
           <Box mt="6" textAlign={"right"}>
-            <Button>Read more</Button>
+            <Button onClick={handleClick}>Read more</Button>
           </Box>
         </CardBody>
       </Flex>

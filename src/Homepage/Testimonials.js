@@ -16,14 +16,14 @@ const TestimonialPage = () => {
       id: 1,
       name: " - Michael, CEO, XYZ Ltd.",
       avatarUrl: "https://picsum.photos/151",
-      text: "“Cedar Notions & Associates provided exceptional guidance during our company’s restructuring process. Their deep understanding of corporate law and strategic insights were invaluable in helping us navigate complex challenges. The team’s professionalism and commitment to our success made all the diff erence.”",
+      text: "“Cedar Notions & Associates provided exceptional guidance during our company’s restructuring process. Their deep understanding of corporate law and strategic insights were invaluable in helping us navigate complex challenges. The team’s professionalism and commitment to our success made all the difference.”",
      
     },
     {
       id: 2,
       name: "- Emily, Lagos",
       avatarUrl: "https://picsum.photos/150",
-      text: "“Their expertise in family law helped me navigate a diffi cult divorce with compassion and clarity. I felt supported every step of the way, and their guidance made a challenging situation much more manageable. I truly appreciate the personalized attention and care I received from the entire team.”",
+      text: "“Their expertise in family law helped me navigate a difficult divorce with compassion and clarity. I felt supported every step of the way, and their guidance made a challenging situation much more manageable. I truly appreciate the personalized attention and care I received from the entire team.”",
      
     },
     {

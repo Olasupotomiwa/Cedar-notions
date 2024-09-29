@@ -31,6 +31,7 @@ const GradientComponent = () => {
           >
             <Image
               src={path}
+              display={{base: 'none', md: 'block'}}
               alt="Sample"
               objectFit="cover"
               width="75%"

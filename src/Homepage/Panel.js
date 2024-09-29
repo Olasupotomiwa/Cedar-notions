@@ -21,7 +21,7 @@ const HorizontalCard = () => {
     setTimeout(() => {
       const missionSection = document.getElementById("our-mission");
       if (missionSection) {
-        const offset = -200; // Adjust this value for your fixed header height or desired offset
+        const offset = -200; 
         const elementPosition =
           missionSection.getBoundingClientRect().top + window.pageYOffset;
         const offsetPosition = elementPosition + offset;

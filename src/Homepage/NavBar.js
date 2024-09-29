@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { FaHome, FaInfoCircle, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaEnvelope, } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
 
 export default function Navbar() {
@@ -59,18 +59,18 @@ export default function Navbar() {
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
-            color={'black'}
+            color={'white'}
             variant='ghost'
             _hover={{
               opacity: '0.9',
             }}
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
-            leftIcon={<FaPhone />}
+           
             href="https://wa.me/393500460774"
             target="_blank"
           >
-            Book Now
+           +234 80 000 000 00
           </Button>
         </Flex>
       </Flex>
@@ -149,23 +149,22 @@ const MobileNav = ({ onClose }) => {
         </Box>
       ))}
       <Button
-        as={'a'}
-        fontSize={'sm'}
-        variant='ghost'
-        fontWeight={500}
-        color={'black'}
-        _hover={{
-          opacity: '0.9',
-        }}
-        mt={4}
-        w={'full'}
-        leftIcon={<FaPhone />}
-        onClick={onClose}
-        href="https://wa.me/393500460774"
-        target="_blank"
-      >
-        Book Now
-      </Button>
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={400}
+            color={'white'}
+            variant='ghost'
+            _hover={{
+              opacity: '0.9',
+            }}
+            display={{ base: 'none', md: 'inline-flex' }}
+            ml={4}
+           
+            href="https://wa.me/393500460774"
+            target="_blank"
+          >
+           +234 80 000 000 00
+          </Button>
     </Stack>
   );
 };

@@ -4,7 +4,8 @@ import { Container } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import NavBar from "./Homepage/NavBar";
 import Homepage from "./Homepage";
-
+import Services from './Services'
+import Contact from './Contacts/Contacts'
 import Animation from "./Animation";
 import AboutPage from "./About";
 import ScrollToTop from './Top';
@@ -13,7 +14,7 @@ const pageTitles = {
   "/": "Cedar Notions Associate",
   "/about": "About Us",
   "/services": "Our Services",
-  "/contact": "contact",
+  "/contact": "Reach Out To Us",
 };
 
 const App = () => {
@@ -35,6 +36,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Animation>
         </Container>

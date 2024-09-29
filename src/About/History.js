@@ -50,7 +50,7 @@ const History = () => {
             </p>
             <br />
             <p>
-              <Text fontSize={16}>
+              <Text fontSize={16} data-aos="fade-up" data-aos-duration="500">
                 At Cedar Notions & Associates, we are committed to maintaining
                 the highest standards of professionalism and integrity in all
                 our dealings. As we continue to grow and evolve, our focus
