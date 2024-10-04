@@ -9,6 +9,7 @@ import Contact from './Contacts/Contacts'
 import Animation from "./Animation";
 import AboutPage from "./About";
 import ScrollToTop from './Top';
+import MeetOurAttorneys from "./Attorneys";
 
 const pageTitles = {
   "/": "Cedar Notions Associate",
@@ -37,6 +38,7 @@ const App = () => {
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/attorneys" element={<MeetOurAttorneys />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </Animation>

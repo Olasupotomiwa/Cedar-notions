@@ -65,7 +65,7 @@ const GradientComponent = () => {
               px={10}
               py={6}
               my={10}
-              href="/"
+              href="/contact"
               target="_blank"
               as={"a"}
               _hover={{ opacity: "0.9" }}

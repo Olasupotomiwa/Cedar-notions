@@ -12,6 +12,12 @@ import {
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Chimaroke from '../assets/Chimaroke.jpg'
+import Badejoko from "../assets/BadejokoSelimot.jpg"
+import Collins from '../assets/Collins.jpg'
+import EkeChinedu from "../assets/EkeChinedum.jpg"
+import IkeNed from "../assets/IkeNed.JPG"
+import Okechukwuku from "../assets/Okechukwu.jpg"
 
 const Card = ({ imageSrc, name, specialization }) => {
   return (
@@ -29,7 +35,7 @@ const Card = ({ imageSrc, name, specialization }) => {
           alt={name}
           borderRadius="20px"
           boxSize="250px"
-          objectFit="cover"
+         
           mb={4}
         />
         <Heading
@@ -56,7 +62,7 @@ const AttorneyProfiles = () => {
     {
       name: "Eke, Chinedum Obioha",
       specialization: " Real Estate and Property Law, Corporate Governance and Regulatory Compliance, Arbitration & Alternative Dispute Resolution (ADR), Constitutional and Administrative Law",
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: EkeChinedu,
     },
     {
       name: "Ogbonna, Vincent Ifeanyi",
@@ -66,22 +72,27 @@ const AttorneyProfiles = () => {
     {
       name: "Edoziem, Chimarokem Prince",
       specialization: "Senior Associate/Team Lead, Litigation Department",
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: Chimaroke,
     },
     {
       name: "Nwaogbo, Ikedinachi Collins",
       specialization: "Criminal Justice, Corporate Law, Commercial Law",
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: Collins,
     },
     {
       name: "Badejoko Selimot Jokotade",
       specialization: " General Practice",
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc:  Badejoko,
     },
     {
       name: "Okechukwu Emmanuel Eke",
       specialization: "Real Estate Management, Property Development",
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: Okechukwuku,
+    },
+    {
+      name: "Ike Ned Stanley",
+      specialization: "Facility Manager & Maintenance Expert ",
+      imageSrc: IkeNed,
     },
     
       
@@ -161,7 +172,7 @@ const AttorneyProfiles = () => {
               variant="solid"
               size="lg"
               as="a"
-              href="/full-details"
+              href="/attorneys"
             >
               Exlore Full Details
             </Button>
@@ -217,16 +228,16 @@ const AttorneyProfiles = () => {
 
          
         </Flex>
-        <Box mt={0} textAlign={"right"} px={10} data-aos="fade-up"
-      data-aos-duration="1500">
+        <Box pb={10} textAlign={"right"} px={10} data-aos="fade-up"
+      data-aos-duration="500">
             <Button
               colorScheme="teal"
               variant="solid"
               size="lg"
               as="a"
-              href="/full-details"
+              href="/attorneys"
             >
-              Exlore Full Details
+              View Full Profile
             </Button>
           </Box>
       </Box>

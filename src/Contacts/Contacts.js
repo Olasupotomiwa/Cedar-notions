@@ -12,8 +12,9 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
+  FaPhoneAlt
 } from "react-icons/fa";
-import { MdPhone, MdLocationOn } from "react-icons/md";
+import {  MdLocationOn } from "react-icons/md";
 import Footer from "../Homepage/Footer";
 
 const ContactSection = () => {
@@ -73,8 +74,38 @@ const ContactSection = () => {
 
           {/* Phone Contact */}
           <HStack spacing={2}>
-            <Icon as={MdPhone} boxSize={6} color="black" />
-            <Text fontSize="lg">+123-456-7890</Text>
+            <Box mt={4}>
+              <Link
+                to="tel:+2349127105771"
+                aria-label="Phone 1"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                 
+                }}
+              >
+                <FaPhoneAlt
+                  style={{ color: "black", marginRight: "0.5em" }}
+                  size="20"
+                />
+                <Text color="black">+234 91 271 057 71</Text>
+              </Link>
+              <Link
+                to="tel:+2348033277051"
+                aria-label="Phone 2"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "10px",
+                }}
+              >
+                <FaPhoneAlt
+                  style={{ color: "black", marginRight: "0.5em" }}
+                  size="20"
+                />
+                <Text color="black">+234 80 332 770 51</Text>
+              </Link>
+            </Box>
           </HStack>
 
           {/* Address */}

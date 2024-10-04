@@ -67,10 +67,10 @@ export default function Navbar() {
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
            
-            href="https://wa.me/393500460774"
-            target="_blank"
+            href="/contact"
+           
           >
-           +234 80 000 000 00
+          Contact Us
           </Button>
         </Flex>
       </Flex>
@@ -151,19 +151,19 @@ const MobileNav = ({ onClose }) => {
       <Button
             as={'a'}
             fontSize={'sm'}
-            fontWeight={400}
-            color={'white'}
+            fontWeight={500}
+            color={'black'}
             variant='ghost'
             _hover={{
               opacity: '0.9',
             }}
-            display={{ base: 'none', md: 'inline-flex' }}
+            display={{ base: 'inline-flex', md: 'none' }}
             ml={4}
            
-            href="https://wa.me/393500460774"
-            target="_blank"
+            href="/contact"
+           
           >
-           +234 80 000 000 00
+          Contact Us
           </Button>
     </Stack>
   );
@@ -188,8 +188,8 @@ const NAV_ITEMS = [
   },
  
   {
-    label: 'Contact',
-    href: '/contact',
+    label: 'Our Attorneys',
+    href: '/attorneys',
     icon: <FaEnvelope size={18}/>,
   },
 ];

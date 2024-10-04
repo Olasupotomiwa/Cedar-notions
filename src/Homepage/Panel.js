@@ -42,7 +42,7 @@ const HorizontalCard = () => {
       variant="outline"
       maxW={{ base: "90vw", md: "70vw" }}
       mx="auto"
-      mt={-16}
+     
     >
       <Flex
         flex="1"
