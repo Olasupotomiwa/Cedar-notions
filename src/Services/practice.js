@@ -30,10 +30,10 @@ const Card = ({ header, content, text, icon }) => {
       borderRadius="md"
       width={{ base: "100%", md: "300px" }}
       mb={4}
-      data-aos="fade-up"
-      data-aos-duration="1000"
+      
     >
-      <Flex direction="column" align="center">
+      <Flex direction="column" align="center" data-aos="fade-up"
+      data-aos-duration="100">
         {" "}
         {/* Make Flex column and center items */}
         <Box mt={2} width="100%" textAlign="center">
@@ -235,8 +235,7 @@ const Services = () => {
         wrap="wrap"
         fontFamily="Montserrat"
         pb={10}
-        data-aos="fade-up"
-        data-aos-duration="500"
+       
       >
         <Box textAlign={"center"} p={0} mt={10}>
           <Heading

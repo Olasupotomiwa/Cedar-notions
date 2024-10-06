@@ -175,7 +175,7 @@ const AttorneyProfiles = () => {
               as="a"
               href="/attorneys"
             >
-              Exlore Full Details
+             View full profile
             </Button>
           </Box>
         </Box>
