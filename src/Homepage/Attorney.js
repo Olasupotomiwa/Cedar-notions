@@ -25,7 +25,7 @@ const Card = ({ imageSrc, name, specialization }) => {
     <Box
       px={{ base: "0", md: "10" }}
       borderRadius="md"
-      width={{ base: "100%", md: "350px" }}
+      width={{ base: "800%", md: "350px" }}
       mb={4}
       data-aos="fade-right"
       data-aos-duration="200"

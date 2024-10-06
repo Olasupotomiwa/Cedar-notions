@@ -32,8 +32,7 @@ const Card = ({ header, content, text, icon }) => {
       mb={4}
       
     >
-      <Flex direction="column" align="center" data-aos="fade-in"
-      data-aos-duration="100">
+      <Flex direction="column" align="center">
         {" "}
         {/* Make Flex column and center items */}
         <Box mt={2} width="100%" textAlign="center">
