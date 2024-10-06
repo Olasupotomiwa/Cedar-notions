@@ -23,9 +23,9 @@ const attorneys = [
     education: "University of Lagos",
     contact: "c.eke@cedarnotionsassociate.co.site",
     profile: [
-      `Eke Chinedum Obioha brings two decades of rich experience in legal practice, specializing in real estate and property law as well as corporate governance. His deep understanding of regulatory compliance enables him to navigate complex legal landscapes effectively, providing clients with the strategic insights needed to thrive in competitive markets.`
-      `As a seasoned practitioner, Eke excels in handling intricate corporate transactions and has a proven track record in arbitration and alternative dispute resolution, ensuring that client interests are safeguarded in various legal contexts. His comprehensive knowledge of constitutional and administrative law further enhances his ability to advise on multifaceted legal issues, making him a trusted advisor for businesses and individuals alike.`
-      `Eke’s educational background from the University of Lagos complements his practical experience, equipping him with a robust foundation in legal principles and practices. His commitment to driving client success is evident in his proactive approach and tailored strategies, positioning him as a key player in the legal field.`
+      `Eke Chinedum Obioha brings two decades of rich experience in legal practice, specializing in real estate and property law as well as corporate governance. His deep understanding of regulatory compliance enables him to navigate complex legal landscapes effectively, providing clients with the strategic insights needed to thrive in competitive markets.`,
+      `As a seasoned practitioner, Eke excels in handling intricate corporate transactions and has a proven track record in arbitration and alternative dispute resolution, ensuring that client interests are safeguarded in various legal contexts. His comprehensive knowledge of constitutional and administrative law further enhances his ability to advise on multifaceted legal issues, making him a trusted advisor for businesses and individuals alike.`,
+      `Eke’s educational background from the University of Lagos complements his practical experience, equipping him with a robust foundation in legal principles and practices. His commitment to driving client success is evident in his proactive approach and tailored strategies, positioning him as a key player in the legal field.`,
     ],
     image: EkeChinedu,
   },
@@ -42,7 +42,7 @@ const attorneys = [
       He possesses a deep understanding of dispute 
       resolution, where his analytical skills and strategic 
       thinking play a crucial role in effectively advocating 
-      for clients.`
+      for clients.`,
       `Vincent has 18 years of expertise in various fields, 
       including litigation, oil and gas/energy law, family 
       law, taxation, data protection, telecommunications 
@@ -50,7 +50,7 @@ const attorneys = [
       knowledge in taxation enables him to provide 
       comprehensive tax planning and compliance 
       strategies, helping clients navigate the 
-      complexities of tax regulations with confidence.`
+      complexities of tax regulations with confidence.`,
       `Educated at the University of Lagos, Vincent 
       combines his academic foundation with practical 
       experience to deliver nuanced legal solutions. His 
@@ -59,7 +59,7 @@ const attorneys = [
       strategies that align with their goals. This 
       dedication to personalized service has earned him a 
       reputation as a trusted advisor in both corporate 
-      and personal legal matters.`
+      and personal legal matters.`,
       
     ],
     image: Ogbonna,
@@ -84,25 +84,25 @@ const attorneys = [
       litigation, copyright law, telecommunication law and banking 
       and finance. His legal acumen spans various domains, enabling 
       him to effectively address the nuanced challenges that clients 
-      face in these areas.`
+      face in these areas.`,
       `Chimarokem’s expertise in litigation makes him a formidable 
       advocate in the courtroom, where he employs a strategic 
       approach to ensure favorable outcomes for his clients. His deep 
       understanding of copyright law equips him to safeguard 
       intellectual property rights, helping creators and businesses 
-      navigate the complexities of protecting their original works.`
+      navigate the complexities of protecting their original works.`,
       `In the banking and finance sector, Chimarokem adeptly 
       interprets and applies financial regulations, providing clients 
       with informed guidance on compliance and risk management. 
       His analytical mindset drives innovative solutions, allowing 
       him to craft tailored strategies that align with client objectives 
-      while mitigating potential legal risks.`
+      while mitigating potential legal risks.`,
       `A proud alumnus of Ahmadu Bello University, Chimarokem 
       combines his solid educational foundation with practical 
       experience to deliver insightful legal counsel. His commitment 
       to excellence and attention to detail have earned him a 
       reputation as a reliable partner in achieving client success 
-      across diverse legal landscapes.`
+      across diverse legal landscapes.`,
     ],
     image: Chimaroke,
   },
@@ -119,21 +119,21 @@ const attorneys = [
       specializing in criminal justice, corporate law, and 
       commercial law. His comprehensive expertise allows him 
       to navigate complex legal matters with confidence and 
-      precision.`
+      precision.`,
       `In the realm of criminal justice, Ikedinachi provides 
       diligent support, ensuring that clients receive thorough 
       representation and guidance throughout the legal process. 
       His strong advocacy skills and understanding of criminal 
       law enable him to address sensitive issues effectively and 
-      pursue the best possible outcomes for his clients.`
+      pursue the best possible outcomes for his clients.`,
       `Ikedinachi also excels in corporate and commercial law, 
       where his meticulous attention to detail plays a vital role 
       in structuring transactions, drafting contracts, and 
       ensuring compliance with regulatory requirements. He 
       works closely with businesses to develop strategies that 
       minimize risk while maximizing opportunities for growth 
-      and success.`
-      `A graduate of Imo State University, Ikedinachi combines a solid academic foundation with practical experience, allowing him to deliver well-rounded legal solutions tailored to the unique needs of each client. His commitment to excellence and his proactive approach have earned him a reputation as a trusted advisor in both corporate and criminal legal matters.`
+      and success.`,
+      `A graduate of Imo State University, Ikedinachi combines a solid academic foundation with practical experience, allowing him to deliver well-rounded legal solutions tailored to the unique needs of each client. His commitment to excellence and his proactive approach have earned him a reputation as a trusted advisor in both corporate and criminal legal matters.`,
     ],
     image: Collins,
   },
@@ -151,22 +151,22 @@ const attorneys = [
       exceptional service to her clients. Selimot graduated with 
       first-class honors, demonstrating her commitment to 
       excellence and her dedication to achieving the best 
-      results.`
+      results.`,
       `As a rising star within our team, Selimot brings fresh 
       perspectives and innovative thinking to every case. Her 
       enthusiasm for learning and professional development 
       allows her to stay ahead of legal trends, ensuring that 
       clients benefit from cutting-edge solutions tailored to 
-      their specific needs.`
+      their specific needs.`,
       `Selimot's approach is characterized by her meticulous 
       attention to detail and her ability to think critically, 
       making her an invaluable resource for navigating a 
       variety of legal issues. She is committed to providing 
       comprehensive support, whether in client consultations, 
       legal research, or drafting documents, always prioritizing 
-      client satisfaction.`
+      client satisfaction.`,
 
-      `Her dedication to excellence and her proactive mindset positions her as a promising legal professional, ready to tackle the challenges of the ever-evolving legal landscape. Clients can trust that Selimot will bring her best efforts to every engagement, working collaboratively to achieve their goals.`
+      `Her dedication to excellence and her proactive mindset positions her as a promising legal professional, ready to tackle the challenges of the ever-evolving legal landscape. Clients can trust that Selimot will bring her best efforts to every engagement, working collaboratively to achieve their goals.`,
     ],
     image: Badejoko,
   },
@@ -183,13 +183,13 @@ const attorneys = [
       State University, Okechukwu specializes in real estate 
       management and property development, where he excels 
       in transforming client visions into successful 
-      investments.`
+      investments.`,
       `In his role, Okechukwu oversees a diverse range of real 
       estate management and development initiatives, ensuring 
       that projects are executed efficiently and effectively. His 
       expertise allows him to assess market trends, identify 
       lucrative opportunities, and implement strategies that 
-      optimize client investments.`
+      optimize client investments.`,
       `He is adept at navigating the complexities of property 
       development, from initial planning and design through to 
       execution and marketing. Okechukwu’s strong analytical 
@@ -201,7 +201,7 @@ const attorneys = [
       enhance the value of client properties and maximize 
       returns on investment. His proactive approach and 
       dedication to client success make him a valuable asset to 
-      our team and a trusted partner in the real estate sector.`
+      our team and a trusted partner in the real estate sector.`,
     ],
     image: Okechukwu,
   },
@@ -226,7 +226,7 @@ const attorneys = [
       maintenance, and operations, ensuring optimal 
       functionality, safety, and compliance. Ike oversees daily 
       facility operations, including maintenance, repairs, 
-      budgeting, contracting, and vendor management.`
+      budgeting, contracting, and vendor management.`,
       `He also leads team training and development while 
       ensuring adherence to safety protocols, conducting risk 
       assessments, and preparing for emergencies. His skill set 
@@ -234,13 +234,13 @@ const attorneys = [
       communication and strong analytical abilities. Ike is a 
       member of International Facility Management Association 
       (IFMA) as well as National Facility Management 
-      Association (NFMA)`
+      Association (NFMA)`,
       `He is proficient in Computer-aided design (CAD), Facility 
       management software (e.g., FM:Systems, Manhattan 
       Software) , Building management systems (BMS) and 
       Microsoft Office Suite. Ike is dedicated to providing 
       exceptional facility management services, ensuring 
-      smooth operations, and exceeding client expectations.`
+      smooth operations, and exceeding client expectations.`,
     ],
     image: IkeNed,
   },
