@@ -3,11 +3,11 @@ import {
   Box,
   Text,
   Flex,
-  Center,
+
   Heading,
   useMediaQuery,
 } from "@chakra-ui/react";
-import Carousel from "react-multi-carousel";
+
 import "react-multi-carousel/lib/styles.css";
 import {
   FaBalanceScale,
@@ -226,24 +226,7 @@ const Services = () => {
     },
   ];
 
-  const [isMobile] = useMediaQuery("(max-width: 767px)");
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
-      slidesToSlide: 5,
-    },
-    mobile: {
-      breakpoint: { max: 767, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-  };
-
-  const carouselContainerStyle = {
-    maxWidth: "100%",
-  };
 
     return (
       <Flex

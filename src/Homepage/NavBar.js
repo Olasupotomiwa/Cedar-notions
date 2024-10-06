@@ -11,7 +11,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
-import { NavLink, useNavigate, Link } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaEnvelope, } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
 
