@@ -32,7 +32,7 @@ const Card = ({ header, content, text, icon }) => {
       mb={4}
       
     >
-      <Flex direction="column" align="center" data-aos="fade-up"
+      <Flex direction="column" align="center" data-aos="fade-in"
       data-aos-duration="100">
         {" "}
         {/* Make Flex column and center items */}

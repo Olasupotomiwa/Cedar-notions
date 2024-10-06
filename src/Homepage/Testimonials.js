@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { useSwipeable } from "react-swipeable";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
+import { AiOutlineMessage } from "react-icons/ai";
 import HeroCustomDot from "./Customdot";
 
 const TestimonialPage = () => {
@@ -17,21 +18,19 @@ const TestimonialPage = () => {
       name: " - Mr. Chike Okorafor (Chairman, Fullmoon Hotels LTD)",
       avatarUrl: "https://picsum.photos/151",
       text: "“Cedar Notions & Associates provided exceptional guidance during our company’s restructuring process. Their deep understanding of corporate law and strategic insights were invaluable in helping us navigate complex challenges. The team’s professionalism and commitment to our success made all the difference.”",
-     
     },
     // {
     //   id: 2,
     //   name: "- Chidi Uchendu (Chief Operative Officer, C00 Servo Direct LTD)",
     //   avatarUrl: "https://picsum.photos/150",
     //   text: "“Their expertise in family law helped me navigate a difficult divorce with compassion and clarity. I felt supported every step of the way, and their guidance made a challenging situation much more manageable. I truly appreciate the personalized attention and care I received from the entire team.”",
-     
+
     // },
     {
       id: 3,
       name: "-Chidi Uchendu (Chief Operative Officer, C00 Servo Direct LTD).",
       avatarUrl: "https://picsum.photos/153",
       text: "“The firm’s dedication to client success is unparalleled. From start to finish, Cedar Notions & Associates demonstrated a proactive approach and unwavering commitment to achieving our goals. Their legal expertise, combined with their understanding of our  business needs, made them an invaluable partner in our journey.”-",
-     
     },
   ];
 
@@ -49,21 +48,19 @@ const TestimonialPage = () => {
 
   return (
     <Box
-     
       display="flex"
       alignItems="center"
       justifyContent="center"
       fontFamily="Poppins"
       padding={{ base: "2", md: "6" }}
       my={0}
-      data-aos="fade-up"
+      data-aos="fade-in"
       data-aos-duration="100"
     >
       <Box maxWidth="540px" width="100%" p={0} {...handlers}>
         <Box p={2} mt={10} textAlign={"center"}>
-         
           <Heading fontFamily={"Signika Negative"} paddingY={2}>
-          Testimonials
+            Testimonials
           </Heading>
         </Box>
         <Box position="relative" data-aos="fade-up" data-aos-duration="100">
@@ -84,13 +81,15 @@ const TestimonialPage = () => {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <Avatar
-                    src={testimonial.avatarUrl}
-                    name={testimonial.name}
-                    size="xl"
-                    mb={4}
-                    border={"5px"}
-                    borderColor={"white"}
+                  <AiOutlineMessage
+                    size="64px" // similar size to the 'xl' Avatar
+                    color="teal"
+                    style={{
+                      marginBottom: "16px", // equivalent to mb={4}
+                      border: "5px solid teal",
+                      borderRadius: "50%", // to keep the circular shape similar to an avatar
+                      padding: "10px", // space around the icon within the border
+                    }}
                   />
                   <Text textAlign="center" px={8} fontFamily={"Montserrat"}>
                     {testimonial.text}
@@ -104,7 +103,6 @@ const TestimonialPage = () => {
                   >
                     {testimonial.name}
                   </Text>
-                 
                 </Flex>
               </Box>
             ))}

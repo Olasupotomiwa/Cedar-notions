@@ -16,7 +16,7 @@ const pageTitles = {
   "/about": "About Us",
   "/services": "Our Services",
   "/contact": "Reach Out To Us",
-  "/attorneys": "Meet Our Attorneys"
+  "/team": "Meet Our Team"
 };
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/attorneys" element={<MeetOurAttorneys />} />
+              <Route path="/team" element={<MeetOurAttorneys />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </Animation>

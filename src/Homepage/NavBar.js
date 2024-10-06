@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Flex,
@@ -9,76 +9,87 @@ import {
   Collapse,
   useDisclosure,
   Image,
-} from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { FaHome, FaInfoCircle, FaEnvelope, } from 'react-icons/fa';
-import Logo from '../assets/Logo.png';
+} from "@chakra-ui/react";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { NavLink, useNavigate } from "react-router-dom";
+import { FaHome, FaInfoCircle, FaEnvelope } from "react-icons/fa";
+import Logo from "../assets/Logo.png";
 
 export default function Navbar() {
   const { isOpen, onToggle, onClose } = useDisclosure();
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate('/');
+    navigate("/");
     onClose();
   };
-  const linkColor = '#ffffff';
-  const linkHoverColor = '#9b9b9a';
-  const activeLinkColor = '#D6C84A';
+  const linkColor = "#ffffff";
+  const linkHoverColor = "#9b9b9a";
+  const activeLinkColor = "#D6C84A";
 
   return (
     <Box
-      fontFamily={'Poppins'}
+      fontFamily={"Poppins"}
       bgGradient="linear(to-b, blackAlpha.800 100%, transparent)"
       position="sticky"
-      Boxshadow='md'
+      Boxshadow="md"
       top={0}
       zIndex={1000}
     >
       <Flex
         color="#000000"
-        minH={'60px'}
+        minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 2, md: 8 }} // Adjusting padding for mobile and desktop
-        align={'center'}
-        justify={{ base: 'space-between', md: 'center' }}
+        align={"center"}
+        justify={{ base: "space-between", md: "center" }}
       >
-        <Flex flex={{ base: 1, md: 'auto' }} align="center">
-          <Image src={Logo} h={'65px'} onClick={handleLogoClick} cursor="pointer" />
+        <Flex flex={{ base: 1, md: "auto" }} align="center">
+          <Image
+            src={Logo}
+            h={"65px"}
+            onClick={handleLogoClick}
+            cursor="pointer"
+          />
         </Flex>
-        <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+        <Flex display={{ base: "none", md: "flex" }} ml={10}>
           <DesktopNav />
         </Flex>
-        <Flex flex={{ base: 1, md: 'auto' }} justify="flex-end" align="center">
+        <Flex flex={{ base: 1, md: "auto" }} justify="flex-end" align="center">
           <IconButton
             onClick={onToggle}
-            icon={isOpen ? <CloseIcon w={3} h={3} color={'white'} /> : <HamburgerIcon w={5} h={5} color={"white"} />}
-            variant={'ghost'}
-            aria-label={'Toggle Navigation'}
-            display={{ base: 'flex', md: 'none' }}
+            icon={
+              isOpen ? (
+                <CloseIcon w={3} h={3} color={"white"} />
+              ) : (
+                <HamburgerIcon w={5} h={5} color={"white"} />
+              )
+            }
+            variant={"ghost"}
+            aria-label={"Toggle Navigation"}
+            display={{ base: "flex", md: "none" }}
           />
-          
+
           <Button
-  as={NavLink} // Use NavLink from react-router-dom
-  to="/contact"
-  fontSize={'16px'}
-  fontWeight={400}
-  color={linkColor}
-  variant='ghost'
-  _hover={{
-    backgroundColor: linkHoverColor, // Same hover state as NavLink
-    color: 'white',
-  }}
-  _active={{
-    backgroundColor: activeLinkColor, // Same active state as NavLink
-    color: 'white',
-  }}
-  display={{ base: 'none', md: 'inline-flex' }}
-  ml={4}
->
-  Contact Us
-</Button>
+            as={NavLink} // Use NavLink from react-router-dom
+            to="/contact"
+            fontSize={"16px"}
+            fontWeight={400}
+            color={linkColor}
+            variant="ghost"
+            _hover={{
+              backgroundColor: linkHoverColor, // Same hover state as NavLink
+              color: "white",
+            }}
+            _active={{
+              backgroundColor: activeLinkColor, // Same active state as NavLink
+              color: "white",
+            }}
+            display={{ base: "none", md: "inline-flex" }}
+            ml={4}
+          >
+            Contact Us
+          </Button>
         </Flex>
       </Flex>
 
@@ -90,27 +101,27 @@ export default function Navbar() {
 }
 
 const DesktopNav = () => {
-  const linkColor = '#ffffff';
-  const linkHoverColor = '#9b9b9a';
-  const activeLinkColor = '#D6C84A';
+  const linkColor = "#ffffff";
+  const linkHoverColor = "#9b9b9a";
+  const activeLinkColor = "#D6C84A";
 
   return (
-    <Stack direction={'row'} spacing={4} justify={'center'}>
+    <Stack direction={"row"} spacing={4} justify={"center"}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <NavLink
             to={navItem.href}
             style={({ isActive }) => ({
-              padding: '8px 16px',
-              fontSize: '16px',
-              fontWeight: isActive ? '500' : 400,
+              padding: "8px 16px",
+              fontSize: "16px",
+              fontWeight: isActive ? "500" : 400,
               color: isActive ? activeLinkColor : linkColor,
-              textDecoration: 'none',
-              display: 'flex',
-              alignItems: 'center',
-              transition: 'color 0.2s',
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              transition: "color 0.2s",
               // Hover effect inside style
-              ':hover': {
+              ":hover": {
                 color: linkHoverColor,
               },
             })}
@@ -124,28 +135,33 @@ const DesktopNav = () => {
   );
 };
 
-
 const MobileNav = ({ onClose }) => {
-  const linkColor = '#000000';
-  const linkHoverColor = '#9b9b9a';
-  const activeLinkColor = '#D6C84A';
+  const linkColor = "#000000";
+  const linkHoverColor = "#9b9b9a";
+  const activeLinkColor = "#D6C84A";
 
   return (
-    <Stack bg="white" p={4} display={{ md: 'none' }}>
+    <Stack bg="white" p={4} display={{ md: "none" }}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label} py={2} display="flex" alignItems="center" onClick={onClose}>
+        <Box
+          key={navItem.label}
+          py={2}
+          display="flex"
+          alignItems="center"
+          onClick={onClose}
+        >
           <NavLink
             to={navItem.href}
             style={({ isActive }) => ({
-              fontWeight: isActive ? '500' : 400,
+              fontWeight: isActive ? "500" : 400,
               color: isActive ? activeLinkColor : linkColor,
-              textDecoration: 'none',
-              display: 'flex',
-              alignItems: 'center',
-              padding: '8px 16px',
-              fontSize: '16px',
-              transition: 'color 0.2s',
-              ':hover': {
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              padding: "8px 16px",
+              fontSize: "16px",
+              transition: "color 0.2s",
+              ":hover": {
                 color: linkHoverColor,
               },
             })}
@@ -156,48 +172,45 @@ const MobileNav = ({ onClose }) => {
         </Box>
       ))}
       <Button
-            as='a'
-            fontSize={'16px'}
-            fontWeight={500}
-            color={'black'}
-            variant='ghost'
-            _hover={{
-              opacity: '0.9',
-            }}
-            display={{ base: 'inline-flex', md: 'none' }}
-            ml={2}
-            cursor={'pointer'}
-           
-            href="/contact"
-           
-          >
-          Contact Us
-          </Button>
+        as="a"
+        fontSize={"16px"}
+        fontWeight={400}
+        color={"black"}
+        variant="ghost"
+        _hover={{
+          opacity: "0.9",
+        }}
+        display={{ base: "inline-flex", md: "none" }}
+        ml={2}
+        cursor={"pointer"}
+        href="/contact"
+      >
+        Contact Us
+      </Button>
     </Stack>
   );
 };
 
-
 const NAV_ITEMS = [
   {
-    label: 'Home',
-    href: '/',
-    icon: <FaHome size={20}  />,
+    label: "Home",
+    href: "/",
+    icon: <FaHome size={20} />,
   },
   {
-    label: 'About',
-    href: '/about',
-    icon: <FaInfoCircle size={20}/>,
+    label: "About",
+    href: "/about",
+    icon: <FaInfoCircle size={20} />,
   },
   {
-    label: 'Services',
-    href: '/services',
-    icon: <FaHome size={20}  />,
+    label: "Services",
+    href: "/services",
+    icon: <FaHome size={20} />,
   },
- 
+
   {
-    label: 'Our Attorneys',
-    href: '/attorneys',
-    icon: <FaEnvelope size={18}/>,
+    label: "Our Team",
+    href: "/team",
+    icon: <FaEnvelope size={18} />,
   },
 ];

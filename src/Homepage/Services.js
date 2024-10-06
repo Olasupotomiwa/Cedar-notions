@@ -291,6 +291,7 @@ const Services = () => {
             autoPlaySpeed={3000}
             customTransition="transform 300ms ease-in-out"
             transitionDuration={300}
+            
             containerClass="carousel-container"
             dotListClass="custom-dot-list"
             arrows={false} // Remove the next and previous arrows
@@ -308,7 +309,7 @@ const Services = () => {
         </Box>
        
       </Center>
-       <Box pb={10} textAlign={"right"} px={10} data-aos="fade-up"
+       <Box pb={10} textAlign={"right"} px={4} data-aos="fade-up"
        data-aos-duration="200">
              <Button
                colorScheme="teal"

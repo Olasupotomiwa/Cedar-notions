@@ -251,7 +251,7 @@ const MeetOurAttorneys = () => {
     <Box>
     <Box p={5} bg={"gray.200"}>
       <Heading as="h2" mb={5} fontFamily="Signika Negative">
-        Meet Our Attorneys
+        Meet Our Team
       </Heading>
       {attorneys.map((attorney, index) => (
         <Box

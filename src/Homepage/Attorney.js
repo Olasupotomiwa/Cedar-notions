@@ -23,19 +23,20 @@ import Ogbonna from '../assets/Ogbonna.png'
 const Card = ({ imageSrc, name, specialization }) => {
   return (
     <Box
-      px={{ base: "2", md: "10" }}
+      px={{ base: "0", md: "10" }}
       borderRadius="md"
-      width={{ base: "100%", md: "300px" }}
+      width={{ base: "100%", md: "350px" }}
       mb={4}
       data-aos="fade-right"
       data-aos-duration="200"
+      
     >
       <Flex direction="column" align="center">
         <Image
           src={imageSrc}
           alt={name}
           borderRadius="20px"
-          boxSize="250px"
+          boxSize="350px"
          
           mb={4}
         />
@@ -62,12 +63,12 @@ const AttorneyProfiles = () => {
   const data = [
     {
       name: "Eke, Chinedum Obioha",
-      specialization: " Real Estate and Property Law, Corporate Governance and Regulatory Compliance, Arbitration & Alternative Dispute Resolution (ADR), Constitutional and Administrative Law",
+      specialization: "Managing Partner",
       imageSrc: EkeChinedu,
     },
     {
       name: "Ogbonna, Vincent Ifeanyi",
-      specialization: "Litigation, Taxation, Family Law",
+      specialization: "Partner",
       imageSrc: Ogbonna,
     },
     {
@@ -77,12 +78,12 @@ const AttorneyProfiles = () => {
     },
     {
       name: "Nwaogbo, Ikedinachi Collins",
-      specialization: "Criminal Justice, Corporate Law, Commercial Law",
+      specialization: "Senior Associate",
       imageSrc: Collins,
     },
     {
       name: "Badejoko Selimot Jokotade",
-      specialization: " General Practice",
+      specialization: "Associate",
       imageSrc:  Badejoko,
     },
     {
@@ -117,14 +118,14 @@ const AttorneyProfiles = () => {
   if (isMobile) {
     return (
       <Center>
-        <Box py={4} width={"90%"} pb={10}>
+        <Box py={4} width={"100%"} pb={10}>
           <Box textAlign={"center"} p={0} mt={2} data-aos="fade-up"
       data-aos-duration="200">
             <Heading
               fontFamily="Signika Negative"
               fontSize={{ base: "32px", md: "40px" }}
             >
-              Meet Our Attorneys
+              Meet Our Team
             </Heading>
             <Text
               fontSize="16px"
@@ -135,6 +136,7 @@ const AttorneyProfiles = () => {
               w={{ base: "100%", md: "60%" }}
               textAlign={{ base: "justify", md: "center" }}
               mb={8}
+              px={4}
             >
               Our team of seasoned legal professionals are distinguished by
               their extensive experience in various practice areas, in-depth
@@ -152,6 +154,7 @@ const AttorneyProfiles = () => {
             infinite
             autoPlay
             autoPlaySpeed={3000}
+            
             customTransition="transform 300ms ease-in-out"
             transitionDuration={300}
             containerClass="carousel-container"
@@ -167,13 +170,14 @@ const AttorneyProfiles = () => {
               />
             ))}
           </Carousel>
-          <Box mt={6} textAlign={"right"}>
+          <Box mt={6} textAlign={"right"}  px={4}>
             <Button
               colorScheme="teal"
               variant="solid"
               size="lg"
               as="a"
-              href="/attorneys"
+             
+              href="/team"
             >
              View full profile
             </Button>
@@ -190,7 +194,7 @@ const AttorneyProfiles = () => {
             fontSize={{ base: "32px", md: "40px" }}
             fontFamily="Signika Negative"
           >
-            Meet Our Attorneys
+            Meet Our Team
           </Heading>
           <Text
             fontSize="16px"
@@ -236,7 +240,7 @@ const AttorneyProfiles = () => {
               variant="solid"
               size="lg"
               as="a"
-              href="/attorneys"
+              href="/team"
             >
               View Full Profile
             </Button>
