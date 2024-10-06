@@ -1,6 +1,6 @@
 // TestimonialPage.jsx
 import React, { useState } from "react";
-import { Box, Flex, Heading, Text, Avatar, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text,  IconButton } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import { useSwipeable } from "react-swipeable";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
