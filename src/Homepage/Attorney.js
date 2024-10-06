@@ -23,9 +23,9 @@ import Ogbonna from '../assets/Ogbonna.png'
 const Card = ({ imageSrc, name, specialization }) => {
   return (
     <Box
-      px={{ base: "0", md: "10" }}
+      px={{ base: "4", md: "10" }}
       borderRadius="md"
-      width={{ base: "80%", md: "350px" }}
+      width={{ base: "100%", md: "350px" }}
       mb={4}
       data-aos="fade-right"
       data-aos-duration="200"
