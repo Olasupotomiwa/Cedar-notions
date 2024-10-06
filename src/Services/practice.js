@@ -5,7 +5,6 @@ import {
   Flex,
 
   Heading,
-  useMediaQuery,
 } from "@chakra-ui/react";
 
 import "react-multi-carousel/lib/styles.css";
