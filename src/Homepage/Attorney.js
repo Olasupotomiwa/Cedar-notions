@@ -18,6 +18,7 @@ import Collins from '../assets/Collins.jpg'
 import EkeChinedu from "../assets/EkeChinedum.jpg"
 import IkeNed from "../assets/IkeNed.JPG"
 import Okechukwuku from "../assets/Okechukwu.jpg"
+import Ogbonna from '../assets/Ogbonna.png'
 
 const Card = ({ imageSrc, name, specialization }) => {
   return (
@@ -67,7 +68,7 @@ const AttorneyProfiles = () => {
     {
       name: "Ogbonna, Vincent Ifeanyi",
       specialization: "Litigation, Taxation, Family Law",
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: Ogbonna,
     },
     {
       name: "Edoziem, Chimarokem Prince",

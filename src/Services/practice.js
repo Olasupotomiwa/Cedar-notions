@@ -245,66 +245,6 @@ const Services = () => {
     maxWidth: "100%",
   };
 
-  if (isMobile) {
-    return (
-      <Center>
-        <Box py={4} style={carouselContainerStyle} px={0} width={"90%"} pb={10}>
-          <Box
-            textAlign={"center"}
-            p={0}
-            mt={8}
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <Heading
-              fontFamily="Signika Negative"
-              fontSize={{ base: "32px", md: "40px" }}
-            >
-              Our Expertise/ Practice Area Overviews
-            </Heading>
-
-            <Text
-              fontSize="16px"
-              color="#000000"
-              fontFamily="Montserrat"
-              my={2}
-              mx={"auto"}
-              w={{ base: "100%", md: "60%" }}
-              textAlign={"justify"}
-            >
-              Our team of seasoned legal professionals boasts extensive
-              experience, in-depth knowledge, and a passion for delivering
-              precision-crafted solutions in:
-            </Text>
-          </Box>
-          <Carousel
-            responsive={responsive}
-            swipeable
-            draggable
-            showDots
-            infinite
-            autoPlay
-            autoPlaySpeed={3000}
-            customTransition="transform 300ms ease-in-out"
-            transitionDuration={300}
-            containerClass="carousel-container"
-            dotListClass="custom-dot-list"
-            arrows={false} // Remove the next and previous arrows
-          >
-            {data.map((card, index) => (
-              <Card
-                key={index}
-                text={card.text}
-                header={card.header}
-                content={card.content}
-                icon={card.icon}
-              />
-            ))}
-          </Carousel>
-        </Box>
-      </Center>
-    );
-  } else {
     return (
       <Flex
         direction={{ base: "column", md: "row" }}
@@ -350,6 +290,6 @@ const Services = () => {
       </Flex>
     );
   }
-};
+
 
 export default Services;

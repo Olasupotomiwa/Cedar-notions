@@ -57,7 +57,7 @@ const Footer = () => {
               <Link to="https://x.com/CedarNotions">
                 <FaTwitter style={{ color: "white" }} size="25" />
               </Link>
-              <Link to=" https://www.linkedin.com/company/cedar-notions-and-associates-law-ratio/">
+              <Link to="https://www.linkedin.com/company/cedar-notions-and-associates-law-ratio/">
                 <FaLinkedinIn style={{ color: "white" }} size="25" />
               </Link>
               <Link to="mailto:contact@cedarnotionsassociate.co.site">

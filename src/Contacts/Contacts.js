@@ -12,9 +12,9 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaPhoneAlt
+  FaPhoneAlt,
 } from "react-icons/fa";
-import {  MdLocationOn } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
 import Footer from "../Homepage/Footer";
 
 const ContactSection = () => {
@@ -81,7 +81,6 @@ const ContactSection = () => {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                 
                 }}
               >
                 <FaPhoneAlt
@@ -120,7 +119,8 @@ const ContactSection = () => {
             <Text fontSize="md">
               Our primary office serves as the hub for our operations, where our
               team collaborates to provide high-quality legal services to
-              clients throughout the region.
+              clients throughout the South West Region, including ; Ibadan,
+              Osogbo, Akure, Abeokuta and Ilorin.
             </Text>
 
             {/* Branch Office */}
@@ -131,8 +131,9 @@ const ContactSection = () => {
               </Text>
             </HStack>
             <Text fontSize="md">
-              Our branch office extends our reach, allowing us to offer our
-              expertise to clients in the Imo State area and beyond.
+              Our Owerri office extends our reach, delivering expertise to
+              clients in the South -East and South-South Regions including;
+              Enugu, Awka, Port Harcourt, Asaba, Uyo, Umahia and Abakaliki.
             </Text>
           </VStack>
         </VStack>

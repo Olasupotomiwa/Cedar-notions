@@ -14,21 +14,21 @@ const TestimonialPage = () => {
   const testimonials = [
     {
       id: 1,
-      name: " - Michael, CEO, XYZ Ltd.",
+      name: " - Mr. Chike Okorafor (Chairman, Fullmoon Hotels LTD)",
       avatarUrl: "https://picsum.photos/151",
       text: "“Cedar Notions & Associates provided exceptional guidance during our company’s restructuring process. Their deep understanding of corporate law and strategic insights were invaluable in helping us navigate complex challenges. The team’s professionalism and commitment to our success made all the difference.”",
      
     },
-    {
-      id: 2,
-      name: "- Emily, Lagos",
-      avatarUrl: "https://picsum.photos/150",
-      text: "“Their expertise in family law helped me navigate a difficult divorce with compassion and clarity. I felt supported every step of the way, and their guidance made a challenging situation much more manageable. I truly appreciate the personalized attention and care I received from the entire team.”",
+    // {
+    //   id: 2,
+    //   name: "- Chidi Uchendu (Chief Operative Officer, C00 Servo Direct LTD)",
+    //   avatarUrl: "https://picsum.photos/150",
+    //   text: "“Their expertise in family law helped me navigate a difficult divorce with compassion and clarity. I felt supported every step of the way, and their guidance made a challenging situation much more manageable. I truly appreciate the personalized attention and care I received from the entire team.”",
      
-    },
+    // },
     {
       id: 3,
-      name: "- David, MD, ABC Ltd.",
+      name: "-Chidi Uchendu (Chief Operative Officer, C00 Servo Direct LTD).",
       avatarUrl: "https://picsum.photos/153",
       text: "“The firm’s dedication to client success is unparalleled. From start to finish, Cedar Notions & Associates demonstrated a proactive approach and unwavering commitment to achieving our goals. Their legal expertise, combined with their understanding of our  business needs, made them an invaluable partner in our journey.”-",
      

@@ -79,8 +79,8 @@ const Virtual = () => {
           px={10}
           py={6}
           my={2}
-          href="/"
-          target="_blank"
+          href="/contact"
+          
           as={"a"}
           _hover={{ opacity: "0.9" }}
         >

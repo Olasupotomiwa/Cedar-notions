@@ -11,7 +11,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaEnvelope, } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
 
@@ -23,6 +23,9 @@ export default function Navbar() {
     navigate('/');
     onClose();
   };
+  const linkColor = '#ffffff';
+  const linkHoverColor = '#9b9b9a';
+  const activeLinkColor = '#D6C84A';
 
   return (
     <Box
@@ -55,23 +58,27 @@ export default function Navbar() {
             aria-label={'Toggle Navigation'}
             display={{ base: 'flex', md: 'none' }}
           />
+          
           <Button
-            as={'a'}
-            fontSize={'sm'}
-            fontWeight={400}
-            color={'white'}
-            variant='ghost'
-            _hover={{
-              opacity: '0.9',
-            }}
-            display={{ base: 'none', md: 'inline-flex' }}
-            ml={4}
-           
-            href="/contact"
-           
-          >
-          Contact Us
-          </Button>
+  as={NavLink} // Use NavLink from react-router-dom
+  to="/contact"
+  fontSize={'16px'}
+  fontWeight={400}
+  color={linkColor}
+  variant='ghost'
+  _hover={{
+    backgroundColor: linkHoverColor, // Same hover state as NavLink
+    color: 'white',
+  }}
+  _active={{
+    backgroundColor: activeLinkColor, // Same active state as NavLink
+    color: 'white',
+  }}
+  display={{ base: 'none', md: 'inline-flex' }}
+  ml={4}
+>
+  Contact Us
+</Button>
         </Flex>
       </Flex>
 
@@ -149,8 +156,8 @@ const MobileNav = ({ onClose }) => {
         </Box>
       ))}
       <Button
-            as={'a'}
-            fontSize={'sm'}
+            as='a'
+            fontSize={'16px'}
             fontWeight={500}
             color={'black'}
             variant='ghost'
@@ -158,7 +165,8 @@ const MobileNav = ({ onClose }) => {
               opacity: '0.9',
             }}
             display={{ base: 'inline-flex', md: 'none' }}
-            ml={4}
+            ml={2}
+            cursor={'pointer'}
            
             href="/contact"
            
