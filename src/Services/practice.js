@@ -249,10 +249,12 @@ const Services = () => {
           <Text
             fontSize="16px"
             color="#000000"
+            textAlign={{base: 'justify'}}
             fontFamily="Montserrat"
             my={2}
             mx={"auto"}
-            w={"60%"}
+            px={4}
+            w={{base: '100%', md: '60%'}}
           >
             Our team of seasoned legal professionals boasts extensive
             experience, in-depth knowledge, and a passion for delivering

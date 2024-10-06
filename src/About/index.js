@@ -10,7 +10,7 @@ const AboutPage = () => {
    
       <Box>
         <Header/>
-        <Box bg={'gray.100'}  fontFamily="Montserrat">
+        <Box bg={'gray.200'}  fontFamily="Montserrat">
        <History/>
         <Footer/>
         </Box>

@@ -17,6 +17,7 @@ const GradientComponent = () => {
         bgPosition="center"
         p={{ base: "1", md: "4" }}
         mt={4}
+       
       >
         <Flex
           width="100%"

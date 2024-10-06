@@ -16,6 +16,7 @@ const pageTitles = {
   "/about": "About Us",
   "/services": "Our Services",
   "/contact": "Reach Out To Us",
+  "/attorneys": "Meet Our Attorneys"
 };
 
 const App = () => {

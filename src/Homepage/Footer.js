@@ -23,8 +23,6 @@ const Footer = () => {
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
       color="white"
-      data-aos="fade-up"
-      data-aos-duration="200"
     >
       <Box
         p={8}
@@ -63,33 +61,39 @@ const Footer = () => {
               <Link to="mailto:contact@cedarnotionsassociate.co.site">
                 <FaEnvelope style={{ color: "white" }} size="25" />
               </Link>
-             
             </Flex>
             <Box mt={4}>
-                <Link
-                  to="tel:+2349127105771"
-                  aria-label="Phone 1"
-                  style={{ display: "flex", alignItems: "center", marginTop: '10px' }}
-                 
-                >
-                  <FaPhoneAlt
-                    style={{ color: "white", marginRight: "0.5em" }}
-                    size="20"
-                  />
-                  <Text color="white">+234 91 271 057 71</Text>
-                </Link>
-                <Link
-                  to="tel:+2348033277051"
-                  aria-label="Phone 2"
-                  style={{ display: "flex", alignItems: "center", marginTop: '10px' }}
-                >
-                  <FaPhoneAlt
-                    style={{ color: "white", marginRight: "0.5em" }}
-                    size="20"
-                  />
-                  <Text color="white">+234 80 332 770 51</Text>
-                </Link>
-              </Box>
+              <Link
+                to="tel:+2349137105771"
+                aria-label="Phone 1"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "10px",
+                }}
+              >
+                <FaPhoneAlt
+                  style={{ color: "white", marginRight: "0.5em" }}
+                  size="20"
+                />
+                <Text color="white">+234 91 371 057 71</Text>
+              </Link>
+              <Link
+                to="tel:+2348033277051"
+                aria-label="Phone 2"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "10px",
+                }}
+              >
+                <FaPhoneAlt
+                  style={{ color: "white", marginRight: "0.5em" }}
+                  size="20"
+                />
+                <Text color="white"> +234 80 332 770 51</Text>
+              </Link>
+            </Box>
           </Box>
 
           <Box mb={5} flexBasis="25%">
@@ -97,21 +101,11 @@ const Footer = () => {
               <Heading color="white" fontSize="18px" fontWeight={600} mb={2}>
                 Our Services
               </Heading>
-              <Link>
-                <Text>Corporate Law</Text>
-              </Link>
-              <Link>
-                <Text>Litigation</Text>
-              </Link>
-              <Link>
-                <Text>Real Estate & Construction</Text>
-              </Link>
-              <Link>
-                <Text>Family Law</Text>
-              </Link>
-              <Link>
-                <Text>Maritime Law</Text>
-              </Link>
+              <Text>Corporate Law</Text>
+              <Text>Litigation</Text>
+              <Text>Real Estate & Construction</Text>
+              <Text>Family Law</Text>
+              <Text>Maritime Law</Text>
             </Box>
           </Box>
 
@@ -137,18 +131,20 @@ const Footer = () => {
               <Box mb={4}>
                 <Text fontWeight={"600"}>
                   <ul>
-                    <li>Head Office</li>
+                    <li>Lagos Office (Head of Operations)</li>
                   </ul>
                 </Text>
-                <Text>6 Allen Avenue, Ikeja, Lagos State</Text>
+                <Text>86 Allen Avenue, Ikeja, Lagos State</Text>
               </Box>
 
               <Text fontWeight={"600"}>
                 <ul>
-                  <li>Branch Oce</li>
+                  <li>Owerri Office</li>
                 </ul>
               </Text>
-              <Text>No. 10 Fullmoon Avenue, Owerri, Imo State</Text>
+              <Text>
+                34A Gov Ikedi Ohakhim Plaza, Relief Market, Owerri, Imo State.
+              </Text>
             </Box>
           </Box>
         </Flex>

@@ -11,7 +11,7 @@ const AboutPage = () => {
    
       <Box>
        
-        <Box bg={'gray.100'}  fontFamily="Montserrat">
+        <Box bg={'gray.200'}  fontFamily="Montserrat">
        <Practice/>
        <Virtual/>
        <ChooseUs/>

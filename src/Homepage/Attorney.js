@@ -13,7 +13,7 @@ import {
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Chimaroke from '../assets/Chimaroke.jpg'
-import Badejoko from "../assets/BadejokoSelimot.jpg"
+import Badejoko from "../assets/BadejokoSelimot.png"
 import Collins from '../assets/Collins.jpg'
 import EkeChinedu from "../assets/EkeChinedum.jpg"
 import IkeNed from "../assets/IkeNed.JPG"
@@ -27,8 +27,8 @@ const Card = ({ imageSrc, name, specialization }) => {
       borderRadius="md"
       width={{ base: "100%", md: "300px" }}
       mb={4}
-      data-aos="fade-up"
-      data-aos-duration="1000"
+      data-aos="fade-right"
+      data-aos-duration="200"
     >
       <Flex direction="column" align="center">
         <Image
@@ -119,7 +119,7 @@ const AttorneyProfiles = () => {
       <Center>
         <Box py={4} width={"90%"} pb={10}>
           <Box textAlign={"center"} p={0} mt={2} data-aos="fade-up"
-      data-aos-duration="500">
+      data-aos-duration="200">
             <Heading
               fontFamily="Signika Negative"
               fontSize={{ base: "32px", md: "40px" }}
@@ -185,7 +185,7 @@ const AttorneyProfiles = () => {
     return (
       <Box>
         <Box textAlign={"center"} p={0} mt={6} data-aos="fade-up"
-      data-aos-duration="500">
+      data-aos-duration="100">
           <Heading
             fontSize={{ base: "32px", md: "40px" }}
             fontFamily="Signika Negative"
@@ -230,7 +230,7 @@ const AttorneyProfiles = () => {
          
         </Flex>
         <Box pb={10} textAlign={"right"} px={10} data-aos="fade-up"
-      data-aos-duration="500">
+      data-aos-duration="200">
             <Button
               colorScheme="teal"
               variant="solid"

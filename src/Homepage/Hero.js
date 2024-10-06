@@ -13,6 +13,7 @@ const HeroPage = () => {
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
       color="white"
+      
     >
       <VStack
         w={"full"}
@@ -28,6 +29,8 @@ const HeroPage = () => {
             textAlign="center"
             fontFamily="Signika Negative"
             px={8}
+            data-aos="fade-up"
+                  data-aos-duration="200"
           >
             Cedar Notions & Associates (Law Ratio)
           </Heading>
@@ -37,6 +40,8 @@ const HeroPage = () => {
             textAlign="center"
             fontFamily="Montserrat"
             px={{ base: "0", md: "28" }}
+            data-aos="fade-down"
+                  data-aos-duration="300"
           >
             A pioneering law firm revolutionizing the legal landscape with
             innovative solutions, unwavering integrity, and a relentless

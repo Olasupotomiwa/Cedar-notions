@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
 import Chimaroke from "../assets/Chimaroke.jpg";
-import Badejoko from "../assets/BadejokoSelimot.jpg";
+import Badejoko from "../assets/BadejokoSelimot.png";
 import Collins from "../assets/Collins.jpg";
 import Ogbonna from '../assets/Ogbonna.png';
 import EkeChinedu from "../assets/EkeChinedum.jpg";
@@ -249,7 +249,7 @@ const attorneys = [
 const MeetOurAttorneys = () => {
   return (
     <Box>
-    <Box p={5} bg={"gray.100"}>
+    <Box p={5} bg={"gray.200"}>
       <Heading as="h2" mb={5} fontFamily="Signika Negative">
         Meet Our Attorneys
       </Heading>
@@ -262,7 +262,8 @@ const MeetOurAttorneys = () => {
           boxShadow="md"
         >
           <Flex alignItems="flex-start" display={{ base: "block", md: "flex" }}>
-            <Box flex="1" mr={0}>
+            <Box flex="1" mr={0} data-aos="fade-right"
+                  data-aos-duration="300">
               <Image
                 borderTopLeftRadius="10px"
                 borderTopRightRadius={{ base: "10px", md: "0px" }}
@@ -291,13 +292,14 @@ const MeetOurAttorneys = () => {
                 </Text>
                 <Text>
                   <strong>Contact:</strong>{" "}
-                  <a href={`mailto:${attorney.contact}`}>{attorney.contact}</a>
+                  <a href={`mailto:${attorney.contact}`} style={{color: 'blue'}}>{attorney.contact}</a>
                 </Text>
               </Box>
             </Box>
             <Box flex="1">
               <Box px={4}>
-                <Box my={4}>
+                <Box my={4} data-aos="fade-up"
+                  data-aos-duration="300">
                   <Heading size="lg" my={{ base: "0", md: "4" }} textTransform='uppercase'>
                     Profile
                   </Heading>
@@ -306,7 +308,8 @@ const MeetOurAttorneys = () => {
                   </Heading>
                 </Box>
                 {attorney.profile.map((paragraph, idx) => (
-                  <Text key={idx} mb={2} px={0} textAlign={"justify"}>
+                  <Text key={idx} mb={2} px={0} textAlign={"justify"} data-aos="fade-left"
+                  data-aos-duration="300">
                     {paragraph}
                   </Text>
                 ))}

@@ -35,7 +35,7 @@ const Card = ({ header, content, text, icon }) => {
       width={{ base: "100%", md: "300px" }}
       mb={4}
       data-aos="fade-up"
-      data-aos-duration="1000"
+      data-aos-duration="100"
     >
       <Flex direction="column" align="center">
         {" "}
@@ -258,7 +258,7 @@ const Services = () => {
             p={0}
             mt={8}
             data-aos="fade-up"
-            data-aos-duration="500"
+            data-aos-duration="200"
           >
             <Heading
               fontFamily="Signika Negative"
@@ -309,13 +309,13 @@ const Services = () => {
        
       </Center>
        <Box pb={10} textAlign={"right"} px={10} data-aos="fade-up"
-       data-aos-duration="500">
+       data-aos-duration="200">
              <Button
                colorScheme="teal"
                variant="solid"
                size="lg"
                as="a"
-               href="/details"
+               href="/services"
              >
                See more
              </Button>
@@ -333,7 +333,7 @@ const Services = () => {
         fontFamily="Montserrat"
         pb={10}
         data-aos="fade-up"
-        data-aos-duration="500"
+        data-aos-duration="200"
       >
         <Box textAlign={"center"} p={0} mt={10}>
           <Heading
@@ -370,7 +370,7 @@ const Services = () => {
       </Flex>
 
       <Box pb={10} textAlign={"right"} px={10} data-aos="fade-up"
-      data-aos-duration="500">
+      data-aos-duration="200">
             <Button
               colorScheme="teal"
               variant="solid"

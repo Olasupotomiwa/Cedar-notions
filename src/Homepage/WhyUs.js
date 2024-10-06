@@ -43,7 +43,7 @@ const HorizontalCard = () => {
       mx="auto"
       mt={4}
       data-aos="fade-up"
-      data-aos-duration="1000"
+      data-aos-duration="100"
     >
       <Flex flex="1" justifyContent="center" alignItems="center" py={0}>
         <Image objectFit="cover" src={Law} h={"full"} alt="law" />

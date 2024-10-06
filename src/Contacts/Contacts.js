@@ -20,7 +20,7 @@ import Footer from "../Homepage/Footer";
 const ContactSection = () => {
   return (
     <Box>
-      <Box py={8} px={4} bg={"gray.100"}>
+      <Box py={8} px={4} bg={"gray.200"}>
         {/* Get in Touch Section */}
         <VStack align="flex-start" spacing={4}>
           <Heading
@@ -76,7 +76,7 @@ const ContactSection = () => {
           <HStack spacing={2}>
             <Box mt={4}>
               <Link
-                to="tel:+2349127105771"
+                to="tel:+2349137105771"
                 aria-label="Phone 1"
                 style={{
                   display: "flex",
@@ -87,7 +87,7 @@ const ContactSection = () => {
                   style={{ color: "black", marginRight: "0.5em" }}
                   size="20"
                 />
-                <Text color="black">+234 91 271 057 71</Text>
+                <Text color="black">+234 91 371 057 71</Text>
               </Link>
               <Link
                 to="tel:+2348033277051"
@@ -113,7 +113,7 @@ const ContactSection = () => {
             <HStack spacing={2}>
               <Icon as={MdLocationOn} boxSize={6} color="black" />
               <Text fontSize="lg" fontWeight="bold">
-                Head Office: 86 Allen Avenue, Ikeja, Lagos State
+              Lagos Office (Head of Operations): 86 Allen Avenue, Ikeja, Lagos State
               </Text>
             </HStack>
             <Text fontSize="md">
@@ -127,13 +127,16 @@ const ContactSection = () => {
             <HStack spacing={2}>
               <Icon as={MdLocationOn} boxSize={6} color="black" />
               <Text fontSize="lg" fontWeight="bold">
-                Branch Office: No. 10 Fullmoon Avenue, Owerri, Imo State
+              Owerri Office: 34A Gov Ikedi Ohakhim Plaza, Relief Market, 
+Owerri, Imo State.
               </Text>
             </HStack>
             <Text fontSize="md">
-              Our Owerri office extends our reach, delivering expertise to
-              clients in the South -East and South-South Regions including;
-              Enugu, Awka, Port Harcourt, Asaba, Uyo, Umahia and Abakaliki.
+            
+Our Owerri office extends our reach, delivering 
+expertise to clients in the South -East and 
+South-South Regions including; Enugu, Awka, 
+Port Harcourt, Asaba, Uyo, Umahia and Abakaliki.
             </Text>
           </VStack>
         </VStack>
