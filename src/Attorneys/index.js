@@ -5,9 +5,9 @@ import Badejoko from "../assets/BadejokoSelimot.png";
 import Collins from "../assets/Collins.jpg";
 import Ogbonna from '../assets/Ogbonna.png';
 import EkeChinedu from "../assets/EkeChinedum.jpg";
-import IkeNed from "../assets/IkeNed.jpg";
 import Okechukwu from "../assets/Okechukwu.jpg";
 import Footer from "../Homepage/Footer"
+import IkeNed from "../assets/IkeNedd.jpg";
 
 const attorneys = [
   {
