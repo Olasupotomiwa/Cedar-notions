@@ -16,7 +16,7 @@ import Chimaroke from '../assets/Chimaroke.jpg'
 import Badejoko from "../assets/BadejokoSelimot.png"
 import Collins from '../assets/Collins.jpg'
 import EkeChinedu from "../assets/EkeChinedum.jpg"
-import IkeNed from "../assets/IkeNed.JPG"
+import IkeNed from "../assets/IkeNed.jpg"
 import Okechukwuku from "../assets/Okechukwu.jpg"
 import Ogbonna from '../assets/Ogbonna.png'
 

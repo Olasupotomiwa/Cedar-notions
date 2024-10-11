@@ -12,7 +12,7 @@ import ScrollToTop from './Top';
 import MeetOurAttorneys from "./Attorneys";
 
 const pageTitles = {
-  "/": "Cedar Notions Associate",
+  "/": "Cedar Notions & Associates",
   "/about": "About Us",
   "/services": "Our Services",
   "/contact": "Reach Out To Us",

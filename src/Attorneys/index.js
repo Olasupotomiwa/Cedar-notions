@@ -5,7 +5,7 @@ import Badejoko from "../assets/BadejokoSelimot.png";
 import Collins from "../assets/Collins.jpg";
 import Ogbonna from '../assets/Ogbonna.png';
 import EkeChinedu from "../assets/EkeChinedum.jpg";
-import IkeNed from "../assets/IkeNed.JPG";
+import IkeNed from "../assets/IkeNed.jpg";
 import Okechukwu from "../assets/Okechukwu.jpg";
 import Footer from "../Homepage/Footer"
 
@@ -275,13 +275,14 @@ const MeetOurAttorneys = () => {
               />
 
               <Box p={6}>
+              <Text fontWeight={'600'} fontSize={'18px'}>
+                  <strong>Name:</strong> {attorney.name}
+                </Text>
                 <Text>
                   <strong>Position:</strong> {attorney.position}
                 </Text>
-                <Text>
-                  <strong>Expertise:</strong> {attorney.expertise.join("")}
-                </Text>
-                {attorney.experience && (
+                
+                {/* {attorney.experience && (
                   <Text>
                     <strong>Experience:</strong> {attorney.experience}
                   </Text>
@@ -293,7 +294,7 @@ const MeetOurAttorneys = () => {
                 <Text>
                   <strong>Contact:</strong>{" "}
                   <a href={`mailto:${attorney.contact}`} style={{color: 'blue'}}>{attorney.contact}</a>
-                </Text>
+                </Text> */}
               </Box>
             </Box>
             <Box flex="1">
@@ -303,9 +304,9 @@ const MeetOurAttorneys = () => {
                   <Heading size="lg" my={{ base: "0", md: "4" }} textTransform='uppercase'>
                     Profile
                   </Heading>
-                  <Heading size="md" my={{ base: "0", md: "4" }}>
-                    {attorney.name}
-                  </Heading>
+                  {/* <Text>
+                  <strong>Expertise:</strong> {attorney.expertise.join("")}
+                </Text> */}
                 </Box>
                 {attorney.profile.map((paragraph, idx) => (
                   <Text key={idx} mb={2} px={0} textAlign={"justify"} data-aos="fade-left"

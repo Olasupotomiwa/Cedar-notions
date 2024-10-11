@@ -177,6 +177,21 @@ const Services = () => {
       icon: <FaUniversity style={{ color: "#000000", width: "20px" }} />, // React Icon
     },
     {
+      header: "Commercial & Industrial Law",
+      text: "Expert guidance for:",
+      content: [
+        "Contract Review",
+        "Negotiation",
+        "Dispute Resolution and litigation",
+        "Arbitrations and mediation",
+        "Regulatory compliance advisory",
+        "Transactional support",
+        "Construction and Infrastructure risk analysis",
+        "Risk management",
+      ],
+      icon: <FaBalanceScale style={{ color: "#000000", width: "20px" }} />, // React Icon
+    },
+    {
       header: "Telecommunications Law",
       text: "Comprehensive expertise in:",
       content: [

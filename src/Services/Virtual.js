@@ -3,16 +3,117 @@ import {
   Container,
   HStack,
   Icon,
- Button
+  Button,
+  ListIcon,
+  ListItem,
+  List,
+  Box,
 } from "@chakra-ui/react";
 import { Text, Heading } from "@chakra-ui/react";
 
 import { FaLaptop } from "react-icons/fa";
+import { FaCheckCircle, FaShieldAlt } from "react-icons/fa";
 
 const Virtual = () => {
   return (
     <div className="animate-bottom">
       <Container maxW="7xl">
+        <Box px={{ base: "0", lg: "10" }}>
+          <HStack spacing={2} my={8} data-aos="fade-up" data-aos-duration="500">
+            <Icon as={FaShieldAlt} boxSize={6} />
+            <Heading
+              as="h1"
+              size={{ base: "xl", md: "xl" }}
+              textAlign="left"
+              fontFamily="Signika Negative"
+            >
+              Sinosure Expertise
+            </Heading>
+          </HStack>
+
+          <Text
+             fontSize={{ base: "md", md: "lg" }}
+            fontFamily="Montserrat"
+            mb={4}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            Cedar Notions & Associates possesses in-depth knowledge and
+            expertise in handling matters involving SINOSURE (China Export &
+            Credit Insurance Corporation). Our experienced lawyers provides a
+            comprehensive guidance on SINOSURE-related Issues.
+          </Text>
+          <Text
+            fontSize={{ base: "lg", md: "xl" }}
+            fontFamily="Montserrat"
+            mb={4}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+           SINOSURE Services include:
+          </Text>
+          <List spacing={3}>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Policy Interpretation and negotiation.
+            </ListItem>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Claim management and recovery.
+            </ListItem>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Dispute resolution and arbitration
+            </ListItem>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Compliance advisory services.
+            </ListItem>
+            
+          </List>
+
+          <Text
+            fontSize={{ base: "lg", md: "xl" }}
+            fontFamily="Montserrat"
+            my={4}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+          Key Strengths:
+          </Text>
+          <List spacing={3}>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Proven success in Sinosure-related matters.
+            </ListItem>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Extensive knowledge of Sinosure policies and procedures.
+            </ListItem>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Strong relationships with Sinosure representatives.
+            </ListItem>
+            <ListItem data-aos="fade-up" data-aos-duration="500">
+              <ListIcon as={FaCheckCircle} color="#D6C84A" />
+              Effective claim management and recovery.
+            </ListItem>
+            
+          </List>
+          <Text
+            fontSize={{ base: "md", md: "lg" }}
+            fontFamily="Montserrat"
+            mt={4}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            Our reputation speaks for itself, earned through years of dedicated
+            service to individuals, businesses, and organizations. We have
+            consistently demonstrated our ability to navigate complex legal
+            challenges, providing innovative solutions that exceed client
+            expectations.
+          </Text>
+        </Box>
         <Text px={{ base: "0", lg: "10" }} pb={4} fontFamily={"Montserrat"}>
           <Text textAlign="justify">
             <HStack
@@ -21,7 +122,7 @@ const Virtual = () => {
               data-aos="fade-up"
               data-aos-duration="500"
             >
-              <Icon as={ FaLaptop} boxSize={6} />
+              <Icon as={FaLaptop} boxSize={6} />
               <Heading
                 as="h1"
                 size={{ base: "xl", md: "xl" }}
@@ -71,24 +172,21 @@ const Virtual = () => {
           </Text>
 
           <Button
-          color={"white"}
-          bg={"#D6C84A"}
-          variant="solid"
-          fontWeight={"400"}
-          size="md"
-          px={10}
-          py={6}
-          my={2}
-          href="/contact"
-          
-          as={"a"}
-          _hover={{ opacity: "0.9" }}
-        >
-          Get in touch
-        </Button>
+            color={"white"}
+            bg={"#D6C84A"}
+            variant="solid"
+            fontWeight={"400"}
+            size="md"
+            px={10}
+            py={6}
+            my={2}
+            href="/contact"
+            as={"a"}
+            _hover={{ opacity: "0.9" }}
+          >
+            Get in touch
+          </Button>
         </Text>
-
-       
       </Container>
     </div>
   );
