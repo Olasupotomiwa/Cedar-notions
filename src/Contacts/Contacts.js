@@ -113,7 +113,8 @@ const ContactSection = () => {
             <HStack spacing={2}>
               <Icon as={MdLocationOn} boxSize={6} color="black" />
               <Text fontSize="lg" fontWeight="bold">
-              Lagos Office (Head of Operations): 86 Allen Avenue, Ikeja, Lagos State
+                Lagos Office (Head of Operations): 86 Allen Avenue, Ikeja, Lagos
+                State
               </Text>
             </HStack>
             <Text fontSize="md">
@@ -127,18 +128,23 @@ const ContactSection = () => {
             <HStack spacing={2}>
               <Icon as={MdLocationOn} boxSize={6} color="black" />
               <Text fontSize="lg" fontWeight="bold">
-              Owerri Office: 34A Gov Ikedi Ohakhim Plaza, Relief Market, 
-Owerri, Imo State.
+                Owerri Office: 34A Gov Ikedi Ohakhim Plaza, Relief Market,
+                Owerri, Imo State.
               </Text>
             </HStack>
             <Text fontSize="md">
-            
-Our Owerri office extends our reach, delivering 
-expertise to clients in the South -East and 
-South-South Regions including; Enugu, Awka, 
-Port Harcourt, Asaba, Uyo, Umahia and Abakaliki.
+              Our Owerri office extends our reach, delivering expertise to
+              clients in the South -East and South-South Regions including;
+              Enugu, Awka, Port Harcourt, Asaba, Uyo, Umahia and Abakaliki.
             </Text>
           </VStack>
+          <Text fontSize="md">
+            With a national footprint, we remain committed to upholding the
+            highest standards of professionalism and integrity in all our
+            dealings. As we continue to grow and evolve, our focus remains
+            steadfast: to be the trusted partner you can rely on for all your
+            legal needs.
+          </Text>
         </VStack>
       </Box>
       <Footer />
