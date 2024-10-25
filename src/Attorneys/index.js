@@ -3,10 +3,10 @@ import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
 import Chimaroke from "../assets/Chimaroke.jpg";
 import Badejoko from "../assets/BadejokoSelimot.png";
 import Collins from "../assets/Collins.jpg";
-import Ogbonna from '../assets/Ogbonna.png';
+import Ogbonna from "../assets/Ogbonna.png";
 import EkeChinedu from "../assets/EkeChinedum.jpg";
 import Okechukwu from "../assets/Okechukwu.jpg";
-import Footer from "../Homepage/Footer"
+import Footer from "../Homepage/Footer";
 import IkeNed from "../assets/IkeNedd.jpg";
 
 const attorneys = [
@@ -60,7 +60,6 @@ const attorneys = [
       dedication to personalized service has earned him a 
       reputation as a trusted advisor in both corporate 
       and personal legal matters.`,
-      
     ],
     image: Ogbonna,
   },
@@ -144,7 +143,7 @@ const attorneys = [
     education: "Osun State University",
     contact: "s.badejoko@cedarnotionsassociate.co.site",
     profile: [
-      `firm, serving as an Associate with a focus on general 
+      `Badejoko Selimot Jokotade is an emerging talent in our firm, serving as an Associate with a focus on general 
       practice. A proud graduate of Osun State University, she 
       blends a strong academic background with a genuine 
       passion for the law, which motivates her to provide 
@@ -249,40 +248,47 @@ const attorneys = [
 const MeetOurAttorneys = () => {
   return (
     <Box>
-    <Box p={5} bg={"gray.200"}>
-      <Heading as="h2" mb={5} fontFamily="Signika Negative">
-        Meet Our Team
-      </Heading>
-      {attorneys.map((attorney, index) => (
-        <Box
-          key={index}
-          mb={6}
-          borderWidth="1px"
-          borderRadius="lg"
-          boxShadow="md"
-        >
-          <Flex alignItems="flex-start" display={{ base: "block", md: "flex" }}>
-            <Box flex="1" mr={0} data-aos="fade-right"
-                  data-aos-duration="300">
-              <Image
-                borderTopLeftRadius="10px"
-                borderTopRightRadius={{ base: "10px", md: "0px" }}
-                w={"full"}
-                h={{ base: "400px", md: "450px" }}
-                src={attorney.image}
-                alt={attorney.name}
-                mb={3} // Margin below the image
-              />
+      <Box p={5} bg={"gray.200"}>
+        <Heading as="h2" mb={5} fontFamily="Signika Negative">
+          Meet Our Team
+        </Heading>
+        {attorneys.map((attorney, index) => (
+          <Box
+            key={index}
+            mb={6}
+            borderWidth="1px"
+            borderRadius="lg"
+            boxShadow="md"
+          >
+            <Flex
+              alignItems="flex-start"
+              display={{ base: "block", md: "flex" }}
+            >
+              <Box
+                flex="1"
+                mr={0}
+                data-aos="fade-right"
+                data-aos-duration="300"
+              >
+                <Image
+                  borderTopLeftRadius="10px"
+                  borderTopRightRadius={{ base: "10px", md: "0px" }}
+                  w={"full"}
+                  h={{ base: "400px", md: "450px" }}
+                  src={attorney.image}
+                  alt={attorney.name}
+                  mb={3} // Margin below the image
+                />
 
-              <Box p={6}>
-              <Text fontWeight={'600'} fontSize={'18px'}>
-                  <strong>Name:</strong> {attorney.name}
-                </Text>
-                <Text>
-                  <strong>Position:</strong> {attorney.position}
-                </Text>
-                
-                {/* {attorney.experience && (
+                <Box p={6}>
+                  <Text fontWeight={"600"} fontSize={"18px"}>
+                    <strong>Name:</strong> {attorney.name}
+                  </Text>
+                  <Text>
+                    <strong>Position:</strong> {attorney.position}
+                  </Text>
+
+                  {/* {attorney.experience && (
                   <Text>
                     <strong>Experience:</strong> {attorney.experience}
                   </Text>
@@ -295,32 +301,41 @@ const MeetOurAttorneys = () => {
                   <strong>Contact:</strong>{" "}
                   <a href={`mailto:${attorney.contact}`} style={{color: 'blue'}}>{attorney.contact}</a>
                 </Text> */}
+                </Box>
               </Box>
-            </Box>
-            <Box flex="1">
-              <Box px={4}>
-                <Box my={4} data-aos="fade-up"
-                  data-aos-duration="300">
-                  <Heading size="lg" my={{ base: "0", md: "4" }} textTransform='uppercase'>
-                    Profile
-                  </Heading>
-                  {/* <Text>
+              <Box flex="1">
+                <Box px={4}>
+                  <Box my={4} data-aos="fade-up" data-aos-duration="300">
+                    <Heading
+                      size="lg"
+                      my={{ base: "0", md: "4" }}
+                      textTransform="uppercase"
+                    >
+                      Profile
+                    </Heading>
+                    {/* <Text>
                   <strong>Expertise:</strong> {attorney.expertise.join("")}
                 </Text> */}
+                  </Box>
+                  {attorney.profile.map((paragraph, idx) => (
+                    <Text
+                      key={idx}
+                      mb={2}
+                      px={0}
+                      textAlign={"justify"}
+                      data-aos="fade-left"
+                      data-aos-duration="300"
+                    >
+                      {paragraph}
+                    </Text>
+                  ))}
                 </Box>
-                {attorney.profile.map((paragraph, idx) => (
-                  <Text key={idx} mb={2} px={0} textAlign={"justify"} data-aos="fade-left"
-                  data-aos-duration="300">
-                    {paragraph}
-                  </Text>
-                ))}
               </Box>
-            </Box>
-          </Flex>
-        </Box>
-      ))}
-    </Box>
-    <Footer/>
+            </Flex>
+          </Box>
+        ))}
+      </Box>
+      <Footer />
     </Box>
   );
 };

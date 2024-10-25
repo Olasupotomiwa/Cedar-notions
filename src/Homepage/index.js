@@ -4,6 +4,7 @@ import HeroPage from './Hero';
 import HorizontalCard from './Panel';
 import Services from './Services';
 import AttorneyProfiles from './Attorney';
+import Sinosure from './Sinosure'
 import WhyUs from './WhyUs';
 import TestimonialPage from './Testimonials';
 import BookConsult from './BookConsult';
@@ -21,6 +22,7 @@ const Homepage = () => {
           <HeroPage />
           <HorizontalCard />
           <Services />
+          <Sinosure/>
           <AttorneyProfiles />
           <WhyUs />
           <TestimonialPage />

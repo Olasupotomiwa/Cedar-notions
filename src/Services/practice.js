@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Text,
-  Flex,
-
-  Heading,
-} from "@chakra-ui/react";
+import { Box, Text, Flex, Heading } from "@chakra-ui/react";
 
 import "react-multi-carousel/lib/styles.css";
 import {
@@ -21,16 +15,12 @@ import {
 } from "react-icons/fa";
 
 const Card = ({ header, content, text, icon }) => {
-  
-  
-
   return (
     <Box
       px={{ base: "2", md: "10" }}
       borderRadius="md"
       width={{ base: "100%", md: "300px" }}
       mb={4}
-      
     >
       <Flex direction="column" align="center">
         {" "}
@@ -77,11 +67,11 @@ const Card = ({ header, content, text, icon }) => {
               textAlign={"left"}
             >
               <ul style={{ paddingLeft: "1.5em", listStyleType: "disc" }}>
-              {content.map((item, index) => (
-                    <li key={index} style={{ marginBottom: "0.5em" }}>
-                      {item}
-                    </li>
-                  ))}
+                {content.map((item, index) => (
+                  <li key={index} style={{ marginBottom: "0.5em" }}>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </Box>
           </Box>
@@ -178,16 +168,20 @@ const Services = () => {
     },
     {
       header: "Commercial & Industrial Law",
-      text: "Expert guidance for:",
+      text: "Our Commercial and Industrial Law practice delivers expert legal solutions to domestic and international businesses. Our seasoned Lawyers navigate complex commercial agreements, regulatory compliance, and trade disputes. Key services include:",
       content: [
-        "Contract Review",
-        "Negotiation",
+        "Contract review and negotiation",
+        "Manufacturing and production",
         "Dispute Resolution and litigation",
         "Arbitrations and mediation",
         "Regulatory compliance advisory",
         "Transactional support",
         "Construction and Infrastructure risk analysis",
         "Risk management",
+        "Energy and natural resources",
+        'Construction and infrastructure',
+        "Technology and software",
+        "Financial institutions and services"
       ],
       icon: <FaBalanceScale style={{ color: "#000000", width: "20px" }} />, // React Icon
     },
@@ -239,54 +233,50 @@ const Services = () => {
     },
   ];
 
+  return (
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      align={{ base: "center", md: "flex-start" }}
+      justify="center"
+      wrap="wrap"
+      fontFamily="Montserrat"
+      pb={10}
+    >
+      <Box textAlign={"center"} p={0} mt={10}>
+        <Heading
+          fontSize={{ base: "32px", md: "40px" }}
+          fontFamily="Signika Negative"
+        >
+          Our Expertise/ Practice Area Overviews
+        </Heading>
 
+        <Text
+          fontSize="16px"
+          color="#000000"
+          textAlign={{ base: "justify" }}
+          fontFamily="Montserrat"
+          my={2}
+          mx={"auto"}
+          px={4}
+          w={{ base: "100%", md: "60%" }}
+        >
+          Our team of seasoned legal professionals boasts extensive experience,
+          in-depth knowledge, and a passion for delivering precision-crafted
+          solutions in:
+        </Text>
+      </Box>
 
-    return (
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        align={{ base: "center", md: "flex-start" }}
-        justify="center"
-        wrap="wrap"
-        fontFamily="Montserrat"
-        pb={10}
-       
-      >
-        <Box textAlign={"center"} p={0} mt={10}>
-          <Heading
-            fontSize={{ base: "32px", md: "40px" }}
-            fontFamily="Signika Negative"
-          >
-            Our Expertise/ Practice Area Overviews
-          </Heading>
-
-          <Text
-            fontSize="16px"
-            color="#000000"
-            textAlign={{base: 'justify'}}
-            fontFamily="Montserrat"
-            my={2}
-            mx={"auto"}
-            px={4}
-            w={{base: '100%', md: '60%'}}
-          >
-            Our team of seasoned legal professionals boasts extensive
-            experience, in-depth knowledge, and a passion for delivering
-            precision-crafted solutions in:
-          </Text>
-        </Box>
-
-        {data.map((card, index) => (
-          <Card
-            key={index}
-            header={card.header}
-            content={card.content}
-            icon={card.icon}
-            text={card.text}
-          />
-        ))}
-      </Flex>
-    );
-  }
-
+      {data.map((card, index) => (
+        <Card
+          key={index}
+          header={card.header}
+          content={card.content}
+          icon={card.icon}
+          text={card.text}
+        />
+      ))}
+    </Flex>
+  );
+};
 
 export default Services;

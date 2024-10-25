@@ -185,14 +185,18 @@ const Services = () => {
       header: "Commercial & Industrial Law",
       text: "Expert guidance for:",
       content: [
-        "Contract Review",
-        "Negotiation",
+        "Contract review and negotiation",
+        "Manufacturing and production",
         "Dispute Resolution and litigation",
         "Arbitrations and mediation",
         "Regulatory compliance advisory",
         "Transactional support",
         "Construction and Infrastructure risk analysis",
         "Risk management",
+        "Energy and natural resources",
+        'Construction and infrastructure',
+        "Technology and software",
+        "Financial institutions and services"
       ],
       icon: <FaBalanceScale style={{ color: "#000000", width: "20px" }} />, // React Icon
     },
