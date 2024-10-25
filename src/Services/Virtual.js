@@ -100,19 +100,7 @@ const Virtual = () => {
             </ListItem>
             
           </List>
-          <Text
-            fontSize={{ base: "md", md: "lg" }}
-            fontFamily="Montserrat"
-            mt={4}
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            Our reputation speaks for itself, earned through years of dedicated
-            service to individuals, businesses, and organizations. We have
-            consistently demonstrated our ability to navigate complex legal
-            challenges, providing innovative solutions that exceed client
-            expectations.
-          </Text>
+          
         </Box>
         <Text px={{ base: "0", lg: "10" }} pb={4} fontFamily={"Montserrat"}>
           <Text textAlign="justify">
