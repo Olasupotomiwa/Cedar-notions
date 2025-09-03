@@ -23,7 +23,7 @@ const attorneys = [
     education: "University of Lagos",
     contact: "c.eke@cedarnotionsassociate.co.site",
     profile: [
-      `Eke Chinedum Obioha brings two decades of rich experience in legal practice, specializing in real estate and property law as well as corporate governance. His deep understanding of regulatory compliance enables him to navigate complex legal landscapes effectively, providing clients with the strategic insights needed to thrive in competitive markets.`,
+      `Eke Chinedum Obioha brings two decades of rich experience in legal practice, specializing in real estate and property law as well as corporate governance. He is a member of the Chartered Institute of Arbitrators and also an Associate of the Institute of Chartered Secretaries. His deep understanding of regulatory compliance enables him to navigate complex legal landscapes effectively, providing clients with the strategic insights needed to thrive in competitive markets.`,
       `As a seasoned practitioner, Eke excels in handling intricate corporate transactions and has a proven track record in arbitration and alternative dispute resolution, ensuring that client interests are safeguarded in various legal contexts. His comprehensive knowledge of constitutional and administrative law further enhances his ability to advise on multifaceted legal issues, making him a trusted advisor for businesses and individuals alike.`,
       `Eke’s educational background from the University of Lagos complements his practical experience, equipping him with a robust foundation in legal principles and practices. His commitment to driving client success is evident in his proactive approach and tailored strategies, positioning him as a key player in the legal field.`,
     ],
@@ -281,11 +281,11 @@ const MeetOurAttorneys = () => {
                 />
 
                 <Box p={6}>
-                  <Text fontWeight={"600"} fontSize={"18px"}>
-                    <strong>Name:</strong> {attorney.name}
+                  <Text fontWeight="600" fontSize="18px">
+                    <strong>{attorney.name}</strong>
                   </Text>
-                  <Text>
-                    <strong>Position:</strong> {attorney.position}
+                  <Text fontWeight="400" fontSize="16px" color="gray.600">
+                    {attorney.position}
                   </Text>
 
                   {/* {attorney.experience && (

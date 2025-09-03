@@ -61,7 +61,7 @@ const Virtual = () => {
             </ListItem>
             <ListItem data-aos="fade-up" data-aos-duration="500">
               <ListIcon as={FaCheckCircle} color="#D6C84A" />
-              Dispute resolution and arbitration
+              Dispute resolution and arbitration.
             </ListItem>
             <ListItem data-aos="fade-up" data-aos-duration="500">
               <ListIcon as={FaCheckCircle} color="#D6C84A" />
